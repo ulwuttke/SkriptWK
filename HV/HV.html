@@ -1,0 +1,620 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>3. Vickers &#8212; Laborskript WK Lab 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'HV/HV';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Rockwell" href="../HR.html" />
+    <link rel="prev" title="2. Brinell" href="../HB.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WP1_Vickers.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/WP1_Vickers.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Einleitung
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Härteprüfung</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../H_Einl.html">1. Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HB.html">2. Brinell</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Vickers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HR.html">4. Rockwell</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Kerbschlagbiegeversuch</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../KBV.html">Kerbschlagbiegeversuch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../KBVBericht.html">Bericht</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FHV/HV.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/HV/HV.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vickers</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubersicht-prufung">3.1. Übersicht Prüfung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkorper">3.2. Prüfkörper</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkrafte">3.3. Prüfkräfte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausmessen-des-eindrucks">3.4. Ausmessen des Eindrucks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnung-des-hartewertes">3.5. Berechnung des Härtewertes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angabe-des-hartewertes">3.6. Angabe des Härtewertes</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="vickers">
+<h1><span class="section-number">3. </span>Vickers<a class="headerlink" href="#vickers" title="Permalink to this heading">#</a></h1>
+<section id="ubersicht-prufung">
+<span id="ueber"></span><h2><span class="section-number">3.1. </span>Übersicht Prüfung<a class="headerlink" href="#ubersicht-prufung" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)">Härteprüfung nach Vickers</a></p></th>
+<th class="head"><p>DIN EN ISO 6507-1:2018-07</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#probe"><span class="std std-ref">Prüfkörper</span></a></p></td>
+<td><p>Glatte ebene Prüffläche, Mindestdicke <span class="math notranslate nohighlight">\(1,5\cdot\textit{Diagonalenlänge}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Eindringkörper (fix)</p></td>
+<td><p>vierseitige Pyramide (quadratische Grundfläche, Spitzenwinkel zwischen den Flanken 136°, Spitze nicht abgerundet) aus Diamant</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pk"><span class="std std-ref">Prüfkraft</span></a></p></td>
+<td><p>Je nach Anwendung zwischen 0,09807 N bis 980,7N, (fast) frei wählbar</p></td>
+</tr>
+<tr class="row-odd"><td><p>Position Eindruck</p></td>
+<td><p>(fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6507-1 Abschn. 8.8)</p></td>
+</tr>
+<tr class="row-even"><td><p>Ablauf</p></td>
+<td><p>1. belasten in <span class="math notranslate nohighlight">\(7^{+1}_{-5}\)</span> s, 2. halten (Einwirkdauer) <span class="math notranslate nohighlight">\(14^{+1}_{-4}\)</span> s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#eindr"><span class="std std-ref">Ausmessen des Eindrucks</span></a></p></td>
+<td><p>Eindruckdiagonalen <span class="math notranslate nohighlight">\(d_1\)</span> und <span class="math notranslate nohighlight">\(d_2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ber"><span class="std std-ref">Berechnung des Härtewertes</span></a></p></td>
+<td><p>Vickers-Härte <span class="math notranslate nohighlight">\(\approx 0,1891\cdot \frac{F}{d^2}\)</span>, <span class="math notranslate nohighlight">\(F\)</span> in N mit <span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span> in mm</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wert"><span class="std std-ref">Angabe des Wertes</span></a></p></td>
+<td><p><em>Zahlenwert</em> <strong>HV</strong> <em>Prüfkraft in kgf</em> <strong>/</strong> <em>ggf. Haltezeit in s</em>, z.B. 233 HV 30, 334 HV 10/30</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prufkorper">
+<span id="probe"></span><h2><span class="section-number">3.2. </span>Prüfkörper<a class="headerlink" href="#prufkorper" title="Permalink to this heading">#</a></h2>
+<p>Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden (die Probe muss eine Oberflächenbearbeitung aufweisen).
+Die Dicke der Probe muss mindestens das 1,5-Fache der Eindruckdiagonallenlänge betragen. Lässt sich die Härte einschätzen, so ergibt sich aus der Gleichung zur Berechnung des Härtewertes die Mindestdicke über</p>
+<p><span class="math notranslate nohighlight">\(\textit{Mindestdicke}=1,5\cdot d=1,5\sqrt{(0,1891\cdot F/\textit{&quot;HV&quot;}}\cdot 1\text{mm}/\sqrt{1\text{N}})\)</span></p>
+<p>bzw. (bei einer vorhandenen Probe) die maximal zu verwendende Prüfkraft <span class="math notranslate nohighlight">\(F_{max}\)</span> zu</p>
+<p><span class="math notranslate nohighlight">\(F_{max}=\textit{&quot;HV&quot;}\cdot d^{2} / 0,1891 = \textit{&quot;HV&quot;}\cdot (\textit{Probendicke}/1,5)^{2} / 0,1891 \cdot 1\text{N}/(1\text{mm}^2)\)</span></p>
+<p>Sind die Oberflächen gekrümmt (z.B. bei Wellen oder Achsen) ist Abschn. 7.4 der DIN EN ISO 6507-1 zu beachten.</p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="prufkrafte">
+<span id="pk"></span><h2><span class="section-number">3.3. </span>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
+<p>Da sich mit dem Vickers-Diamanten als Eindringkörper im Prinzip immer auswertbare Eindrücke erzeugen lassen, gibt es keine Normvorgaben für die Wahl der Prüfkräfte. Damit ist sowohl die “normale” Härte zu prüfen, als auch die Mikrostruktur (vgl. Bereiche der nachfolgenden Tabelle). Für eine gute Auswertung sollten möglichst große Eindrücke erzeugt werden (die natürlich noch durhc die Optik auswertbar sein müssen). Damit sollten tendentiell bei härteren Werkstoffen höhere Prüfkräfte verwendet werden. Ggf. ergibt sich aus der <a class="reference internal" href="#probe"><span class="std std-ref">Dicke des Prüfkörpers</span></a> eine Beschränkung der Prüfkraft um nicht zu große Eindrücke zu erhalten.
+Wird die Prüfung im Rahmen einer Normprüfung oder anderen Vorgaben durchgeführt, sind hier meist Prüfkräfte definiert. Dies ist dann natürlich zu bechten.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Bereich</p></th>
+<th class="head"><p>Prüfkraft in N</p></th>
+<th class="head"><p>Benennung Tab.1 DIN EN ISO 6507-1</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>konventionell</p></td>
+<td><p><span class="math notranslate nohighlight">\(F\geq 49,03\)</span>  (<span class="math notranslate nohighlight">\(\geq\)</span>HV 5)</p></td>
+<td><p>Härteprüfung nach Vickers</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kleinkraft</p></td>
+<td><p><span class="math notranslate nohighlight">\(1,961\leq F &lt; 49,03\)</span> (HV 0,2 bis <span class="math notranslate nohighlight">\(&lt;\)</span> HV 5)</p></td>
+<td><p>Härteprüfung nach Vickers im Kleinkraftbereich</p></td>
+</tr>
+<tr class="row-even"><td><p>Mikrohärte</p></td>
+<td><p><span class="math notranslate nohighlight">\(9,807\cdot10^{-3}\leq F &lt; 1,961 \)</span> (HV 0,001 bis <span class="math notranslate nohighlight">\(&lt;\)</span> HV 0,2)</p></td>
+<td><p>Vickers-Mikrohärteprüfung</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="ausmessen-des-eindrucks">
+<span id="eindr"></span><h2><span class="section-number">3.4. </span>Ausmessen des Eindrucks<a class="headerlink" href="#ausmessen-des-eindrucks" title="Permalink to this heading">#</a></h2>
+<p>Zur Bewertung des plastischen Eindrucks werden die Eindruckdiagonalen gemessen. Damit sind die Diagonalen die eigendtlichen Messgrößen. Weichen die beiden gemessenen Diagonalenwerte mehr als 5% voneinander ab, so ist das im Prüfbericht zu vermerken!</p>
+<p><img alt="Eindruck" src="../_images/HVPKEindr.png" /></p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="berechnung-des-hartewertes">
+<span id="ber"></span><h2><span class="section-number">3.5. </span>Berechnung des Härtewertes<a class="headerlink" href="#berechnung-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<p>der Härtewert ergibt sich aus der Prüfkraft <span class="math notranslate nohighlight">\(F\)</span> und der Oberfläche des Eindrucks <span class="math notranslate nohighlight">\(A_{D}\)</span>. Die Berechnung der Oberfläche des Eindrucks erfolgt über die Geometire des Eindringkörpers(hier die Diamantpyramide mit quadratischer Grundfläche und einem Spitzenwinkel von <span class="math notranslate nohighlight">\(\alpha=136°\)</span>) und die mittlere gemessene Eindruchdiagonale</p>
+<p><span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span></p>
+<p>Der berechnete Wert wird der Härteskala zugeordnet und ist ein reiner Zahlenwert ohne Dimension. Da die Vickers-Härteskala bereits zu beginn des 20. Jahrhunderts entwickelt wurde, hat ist mit den alten Härtewerten die alte Krafteinheit <span class="math notranslate nohighlight">\(kp=kgf\)</span> (<em>Kilopond</em>) verbunden. Die Umrechnung erfolgt über die Erdbeschleunigung:</p>
+<p><span class="math notranslate nohighlight">\([F]=1 \text{N} = g_{n} \cdot 1 \text{kp}\)</span> mit <span class="math notranslate nohighlight">\(g_{n}= 9,80665 \frac{\text{m}}{\text{s}^2}\)</span></p>
+<p>Damit ergibt sich für den Härtewert:</p>
+<p><span class="math notranslate nohighlight">\( \textit{Vickers-Härtewert} = \frac{1}{g_n} \cdot \frac{F}{A_D} = \frac{1}{g_n} \cdot \frac{2\cdot F}{d^2/sin(\frac{\alpha}{2})} \)</span></p>
+<p>bzw. mit den Werten für <span class="math notranslate nohighlight">\(g_{n}\)</span> und <span class="math notranslate nohighlight">\(\alpha = 136°\)</span></p>
+<p><span class="math notranslate nohighlight">\( \textit{Vickers-Härtewert} \approx 0,1891\cdot \frac{F}{d^2} \)</span> mit <span class="math notranslate nohighlight">\(F\)</span> in N mit <span class="math notranslate nohighlight">\(d\)</span> in mm</p>
+<p><img alt="Eindruckoberflaeche" src="../_images/HV_Aeind.png" /></p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="angabe-des-hartewertes">
+<span id="wert"></span><h2><span class="section-number">3.6. </span>Angabe des Härtewertes<a class="headerlink" href="#angabe-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<p>Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!</p>
+<p><img alt="Eindruckoberflaeche" src="../_images/HV_angabe.png" /></p>
+<p>Der Prüfbericht muss in Anlehnung an DIN EN ISO 6507-1:2018, Absch. 10 folgende Angaben enthalten:</p>
+<p>a) Normenverweis</p>
+<p>b) Prbenbezeichnung zur eindeutigen Zuordnung</p>
+<p>c) Prüfdatum</p>
+<p>d) Prüfergebnis</p>
+<p>e) alle wesentlichen Randbedingunen der Prüfung, die nicht in der Norm festgelegt sind</p>
+<p>f) Ereignisse oder Bedinugnen die ggf. das Prüfergebnis beeinträchtigen können</p>
+<p>g) die Prüftemperatur</p>
+<p>h) ggf. Grundlage und Verfahren der Umwertung</p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./HV"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../HB.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Brinell</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../HR.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Rockwell</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubersicht-prufung">3.1. Übersicht Prüfung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkorper">3.2. Prüfkörper</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkrafte">3.3. Prüfkräfte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausmessen-des-eindrucks">3.4. Ausmessen des Eindrucks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnung-des-hartewertes">3.5. Berechnung des Härtewertes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angabe-des-hartewertes">3.6. Angabe des Härtewertes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By U. Wuttke
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
