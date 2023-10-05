@@ -9,7 +9,7 @@ parts:
     numbered: True  # Only applies to chapters in Part 1.
     chapters:
     - file: H_Einl
-    - file: HB
+    - file: HB/HB
     - file: HV/HV
     - file: HR
   - caption: Kerbschlagbiegeversuch

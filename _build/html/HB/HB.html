@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Vickers &#8212; Laborskript WK Lab 1</title>
+    <title>2. Brinell &#8212; Laborskript WK Lab 1</title>
   
   
   
@@ -63,9 +63,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'HV/HV - Kopie';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'HB/HB';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Vickers" href="../HV/HV.html" />
+    <link rel="prev" title="1. Grundlagen" href="../H_Einl.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,10 +159,10 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Härteprüfung</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../H_Einl.html">1. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../HB/HB.html">2. Vickers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="HV.html">3. Vickers</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Brinell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HV/HV.html">3. Vickers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../HR.html">4. Rockwell</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Kerbschlagbiegeversuch</span></p>
@@ -238,7 +240,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FHV/HV - Kopie.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FHB/HB.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -268,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/HV/HV - Kopie.md" target="_blank"
+      <li><a href="../_sources/HB/HB.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -350,7 +352,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Vickers</h1>
+    <h1>Brinell</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -360,9 +362,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basisangaben">Basisangaben</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkrafte">Prüfkräfte</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufablauf">Prüfablauf</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubersicht-prufung">2.1. Übersicht Prüfung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkorper">2.2. Prüfkörper</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkrafte">2.3. Prüfkräfte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausmessen-des-eindrucks">2.4. Ausmessen des Eindrucks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnung-des-hartewertes">2.5. Berechnung des Härtewertes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angabe-des-hartewertes">2.6. Angabe des Härtewertes</a></li>
 </ul>
             </nav>
         </div>
@@ -374,49 +379,176 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="vickers">
-<h1>Vickers<a class="headerlink" href="#vickers" title="Permalink to this heading">#</a></h1>
-<section id="basisangaben">
-<h2>Basisangaben<a class="headerlink" href="#basisangaben" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="brinell">
+<h1><span class="section-number">2. </span>Brinell<a class="headerlink" href="#brinell" title="Permalink to this heading">#</a></h1>
+<section id="ubersicht-prufung">
+<span id="ueber"></span><h2><span class="section-number">2.1. </span>Übersicht Prüfung<a class="headerlink" href="#ubersicht-prufung" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Härteprüfung nach Vickers</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://de.wikipedia.org/wiki/H%C3%A4rte#Brinell">Härteprüfung nach Brinell</a></p></th>
+<th class="head"><p>DIN EN ISO 6507-1:2015-02</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Beschreibung</p></td>
-<td><p><a class="reference external" href="https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)">Vickers</a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#probe"><span class="std std-ref">Prüfkörper</span></a></p></td>
+<td><p>Glatte ebene Prüffläche, Mindestdicke <span class="math notranslate nohighlight">\(8\cdot\textit{Eindringtiefe}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>Prüfnorm</p></td>
-<td><p>DIN EN ISO 6507-1:2006</p></td>
+<tr class="row-odd"><td><p>Eindringkörper</p></td>
+<td><p>Kugel mit <span class="math notranslate nohighlight">\(D=1; 2,5; 5; 10 \text{ mm}\)</span> aus Hartmetall (früher auch gehärteter Stahl)</p></td>
 </tr>
-<tr class="row-even"><td><p>Eindringkörper</p></td>
-<td><p>vierseitige Pyramide (quadratische Grundfläche, Spitzenwinkel zwischen den Flanken 136°, Spitze nicht abgerundet) aus Diamant (#Basis)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pk"><span class="std std-ref">Prüfkraft</span></a></p></td>
+<td><p>Je nach Werkstoff und Kugeldurchmesser zwischen 9,807 N und 29,420 kN, definiert über den Beanspruchungsgrad</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pk"><span class="std std-ref">Prüfkräfte</span></a></p></td>
-<td><p>Je nach Anwendung zwischen 0,09807 N bis 980,7N, frei wählbar</p></td>
+<tr class="row-odd"><td><p>Position Eindruck</p></td>
+<td><p>(fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6507-1 Abschn. 8.8)</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pa"><span class="std std-ref">Prüfablauf</span></a></p></td>
-<td><p>Auswahl der Prüfkraft, Belasten bis Fmax innerhalb von 2 - 8 s, Halten der Prüfkraft 10 - 15s, Entlasten und Ausmessen des plastischen Eindrucks</p></td>
+<tr class="row-even"><td><p>Ablauf</p></td>
+<td><p>1. belasten in <span class="math notranslate nohighlight">\(7^{+1}_{-5}\)</span> s, 2. halten (Einwirkdauer) <span class="math notranslate nohighlight">\(14^{+1}_{-4}\)</span> s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten</p></td>
 </tr>
-<tr class="row-odd"><td><p>Messgrößen</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#eindr"><span class="std std-ref">Ausmessen des Eindrucks</span></a></p></td>
 <td><p>Eindruckdiagonalen <span class="math notranslate nohighlight">\(d_1\)</span> und <span class="math notranslate nohighlight">\(d_2\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>Angabe des Wertes</p></td>
-<td><p><em>Zahlenwert</em> HV <em>Prüfkraft in kgf</em> / <em>ggf. Haltezeit in s</em>, z.B. 233HV30, 334HV10/30</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#ber"><span class="std std-ref">Berechnung des Härtewertes</span></a></p></td>
+<td><p>Brinell-Härte <span class="math notranslate nohighlight">\(= 0,102\cdot\frac{2F}{\pi{} D^2(1-\sqrt{1-d^2/D^2})}\)</span>, <span class="math notranslate nohighlight">\(F\)</span> in N, <span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span> in mm</p></td>
 </tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wert"><span class="std std-ref">Angabe des Wertes</span></a></p></td>
+<td><p><em>Zahlenwert</em> <strong>HBW</strong> <em>Kugeldurchmesser</em> <strong>/</strong> <em>Prüfkraft in kgf</em> <strong>/</strong> <em>ggf. Haltezeit in s</em>, z.B. 133 HBW 1/30/20, 120 HBW 2,5/62,5</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="prufkrafte">
-<span id="pk"></span><h2>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
+<section id="prufkorper">
+<span id="probe"></span><h2><span class="section-number">2.2. </span>Prüfkörper<a class="headerlink" href="#prufkorper" title="Permalink to this heading">#</a></h2>
+<p>Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden.
+Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe betragen.</p>
+<p><span class="math notranslate nohighlight">\(\textit{Mindestdicke}=8\cdot h=8\cdot\frac{D}{2}(1-\sqrt{1-d^2/D^2})\)</span></p>
+<p>bzw. (bei einer vorhandenen Probe) die maximal zu verwendende Prüfkraft <span class="math notranslate nohighlight">\(F_{max}\)</span> zu</p>
+<p><span class="math notranslate nohighlight">\(F_{max}=\textit{&quot;HV&quot;}\cdot d^{2} / 0,1891 = \textit{&quot;HV&quot;}\cdot (\textit{Probendicke}/1,5)^{2} / 0,1891 \cdot 1\text{N}/(1\text{mm}^2)\)</span></p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
-<section id="prufablauf">
-<span id="pa"></span><h2>Prüfablauf<a class="headerlink" href="#prufablauf" title="Permalink to this heading">#</a></h2>
+<section id="prufkrafte">
+<span id="pk"></span><h2><span class="section-number">2.3. </span>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
+<p>Die Prüfkräfte sind so zu wählen, dass der Eindruckdurchmesser zwischen den Werten 0,24 D 0,6 D liegt. Dies wird i.A. durch die Wahl der Prüfkraft anhand des Beanspruchungsgrades <span class="math notranslate nohighlight">\((=0,102\cdot F/D^2)\)</span> erreicht, der für bestimmte Härteniveaus bzw. typische Werkstoffe in der DIN EN ISO 6506-1 definiert ist:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Werkstoff</p></th>
+<th class="head"><p>Brinellhärte</p></th>
+<th class="head"><p>Beanspruchungsgrad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Stahl, Nickel- und Titanleg.</p></td>
+<td><p></p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gusseisen</p></td>
+<td><p><span class="math notranslate nohighlight">\(&lt;140\)</span></p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(\geq140\)</span></p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kupfer, -leg.</p></td>
+<td><p><span class="math notranslate nohighlight">\(&lt;35\)</span></p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(35\)</span> bis <span class="math notranslate nohighlight">\(200\)</span></p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>&gt;<span class="math notranslate nohighlight">\(200\)</span></p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-even"><td><p>Leitmetalle, -leg.</p></td>
+<td><p><span class="math notranslate nohighlight">\(&lt;35\)</span></p></td>
+<td><p>2,5</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(35\)</span> bis <span class="math notranslate nohighlight">\(80\)</span> / &gt;<span class="math notranslate nohighlight">\(80\)</span></p></td>
+<td><p>5/10/15</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>&gt;<span class="math notranslate nohighlight">\(80\)</span></p></td>
+<td><p>10/15</p></td>
+</tr>
+<tr class="row-odd"><td><p>Blei, Zinn</p></td>
+<td><p></p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p>Für einen einen Kugeldurchmesser von <span class="math notranslate nohighlight">\(D=2,5\text{ mm}\)</span> ergeben sich damit je nach Beanspruchungsgrad über die Gleichung</p>
+<p><span class="math notranslate nohighlight">\(F=\frac{\text{Beanspruchungsgrad}\cdot D^2}{0,102}\)</span></p>
+<p>die folgenden Prüfkräfte</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol Härte</p></th>
+<th class="head"><p>Beanspruchungsgrad</p></th>
+<th class="head"><p>Prüfkraft  in N</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>HBW 2,5/187,5</p></td>
+<td><p>30</p></td>
+<td><p><span class="math notranslate nohighlight">\(1839\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>HBW 2,5/62,5</p></td>
+<td><p>10</p></td>
+<td><p><span class="math notranslate nohighlight">\(612,9\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>HBW 2,5/31,25</p></td>
+<td><p>5</p></td>
+<td><p><span class="math notranslate nohighlight">\(306,5\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>HBW 2,5/15,625</p></td>
+<td><p>2,5</p></td>
+<td><p><span class="math notranslate nohighlight">\(153,2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>HBW 2,5/6,25</p></td>
+<td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(61,29\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="ausmessen-des-eindrucks">
+<span id="eindr"></span><h2><span class="section-number">2.4. </span>Ausmessen des Eindrucks<a class="headerlink" href="#ausmessen-des-eindrucks" title="Permalink to this heading">#</a></h2>
+<p>Zur Bewertung des plastischen Eindrucks ist der Durchmesser des Eindrucks in zwei etwas senkrecht zueinander liegenden Richtungen zu messen.</p>
+<p><img alt="Eindruck" src="../_images/HBPKEindr.png" /></p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="berechnung-des-hartewertes">
+<span id="ber"></span><h2><span class="section-number">2.5. </span>Berechnung des Härtewertes<a class="headerlink" href="#berechnung-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<p>Der Härtewert ergibt sich aus der Prüfkraft <span class="math notranslate nohighlight">\(F\)</span> und der Oberfläche des Eindrucks <span class="math notranslate nohighlight">\(A_{D}\)</span>. Die Berechnung der Oberfläche des Eindrucks ergibt sich über das “eingedrungene” <a class="reference external" href="https://de.wikipedia.org/wiki/Kugelsegment">Kugelsement</a>, über die  mittlere gemessene Eindruckhdiagonale</p>
+<p><span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span></p>
+<p><img alt="Eindruckoberflaeche" src="../_images/HB_Aeind.png" />
+Mit der Oberfläche des Kugelsegments</p>
+<p><span class="math notranslate nohighlight">\(A_D=\frac{\pi D}{2}(D-\sqrt(D^2-d^2)\)</span></p>
+<p>ergibt sich der Härtewert</p>
+<p><span class="math notranslate nohighlight">\( \textit{Brinell-Härtewert} = 0,102\frac{2F}{\pi D(D-\sqrt{D^2-d^2})} \)</span> mit <span class="math notranslate nohighlight">\(F\)</span> in N mit <span class="math notranslate nohighlight">\(d\)</span> in mm</p>
+<p>Der berechnete Wert wird der Härteskala zugeordnet und ist ein reiner Zahlenwert ohne Dimension. Da die Brinell-Härteskala bereits zu beginn des 20. Jahrhunderts entwickelt wurde, hat ist mit den alten Härtewerten die alte Krafteinheit <span class="math notranslate nohighlight">\(kp=kgf\)</span> (<em>Kilopond</em>) verbunden. Die Umrechnung erfolgt über die Erdbeschleunigung:</p>
+<p><span class="math notranslate nohighlight">\([F]=1 \text{N} = g_{n} \cdot 1 \text{kp}\)</span> mit <span class="math notranslate nohighlight">\(g_{n}= 9,80665 \frac{\text{m}}{\text{s}^2}\)</span></p>
+<p>Hieraus resultirt der Faktor <span class="math notranslate nohighlight">\(0,102\approx1/9,80665\)</span></p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
+</section>
+<section id="angabe-des-hartewertes">
+<span id="wert"></span><h2><span class="section-number">2.6. </span>Angabe des Härtewertes<a class="headerlink" href="#angabe-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<p>Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!</p>
+<p><img alt="Eindruckoberflaeche" src="../_images/HB_angabe.png" /></p>
+<p>Der Prüfbericht muss in Anlehnung an DIN EN ISO 6506-1:2015, Absch. 9 folgende Angaben enthalten:</p>
+<p>a) Normenverweis</p>
+<p>b) Prbenbezeichnung zur eindeutigen Zuordnung</p>
+<p>c) Prüfdatum</p>
+<p>d) Prüftemperatur</p>
+<p>e) ggf. das Verhältnis von Eindruckdruchmesser und Eindringkörperdurchmesser</p>
+<p>f) Prüfergebnis</p>
+<p>g) ggf. Grundlage und Verfahren der Umwertung</p>
+<p>h) alle wesentlichen Randbedingunen der Prüfung, die nicht in der Norm festgelegt sind</p>
+<p>i) Ereignisse oder Bedinugnen die ggf. das Prüfergebnis beeinträchtigen können</p>
+<p><a class="reference internal" href="#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 </section>
 
@@ -433,7 +565,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./HV"
+            path: "./HB"
         },
         predefinedOutput: true
     }
@@ -451,6 +583,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../H_Einl.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Grundlagen</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../HV/HV.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Vickers</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -469,9 +619,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basisangaben">Basisangaben</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkrafte">Prüfkräfte</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufablauf">Prüfablauf</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubersicht-prufung">2.1. Übersicht Prüfung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkorper">2.2. Prüfkörper</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prufkrafte">2.3. Prüfkräfte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausmessen-des-eindrucks">2.4. Ausmessen des Eindrucks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnung-des-hartewertes">2.5. Berechnung des Härtewertes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angabe-des-hartewertes">2.6. Angabe des Härtewertes</a></li>
 </ul>
   </nav></div>
 
