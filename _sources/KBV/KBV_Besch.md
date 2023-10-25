@@ -7,11 +7,11 @@ Im Kerbschlagbiegeversuch wird die Kerbprobe mit einem Pendelhammer zerschlagen 
 
 ![Ablauf](KBVAbl.png)
 
-Bei gegebener Masse des Pendelhammers $m$ ergibt sich die kerbschlagenergie wie folgt:
+Bei gegebener Masse des Pendelhammers $m$ ergibt sich die Kerbschlagenergie mit der Erdbeschleunigung $g$ wie folgt:
 
 - potentielle Anfangsenergie $K_p=E_1=m \cdot h_1$
-- potentielle energie des Hammers, nach dem Durchschlagen der Probe $E_4=m \cdot h_4$
-- **verbrauchte Schlagenergie** $KU\text{ bzw. }KV=E_1-E_4=m\cdot(h_1-h_4)$ 
+- potentielle energie des Hammers, nach dem Durchschlagen der Probe $E_4=m \cdot g \cdot h_4$
+- **verbrauchte Schlagenergie** $KU\text{ bzw. }KV=E_1-E_4=m \cdot g\cdot(h_1-h_4)$ 
 
 Bei Prüfmaschinen mit Schleppzeiger lassen sich die Höhen direkt aus der Winkellage berechnen bzw. wird die Winkelskala direkt in Schlagenergie angegben.
 

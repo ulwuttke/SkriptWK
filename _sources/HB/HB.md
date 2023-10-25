@@ -5,16 +5,16 @@
 
 | [Härteprüfung nach Brinell](https://de.wikipedia.org/wiki/H%C3%A4rte#Brinell) | DIN EN ISO 6507-1:2015-02 |
 | ----------- | ----------- |
-| [Prüfkörper](probe) | Glatte ebene Prüffläche, Mindestdicke $8\cdot\textit{Eindringtiefe}$
+| [Prüfkörper](probehb) | Glatte ebene Prüffläche, Mindestdicke $8\cdot\textit{Eindringtiefe}$
 | Eindringkörper | Kugel mit $D=1; 2,5; 5; 10 \text{ mm}$ aus Hartmetall (früher auch gehärteter Stahl)|
-| [Prüfkraft](pk) | Je nach Werkstoff und Kugeldurchmesser zwischen 9,807 N und 29,420 kN, definiert über den Beanspruchungsgrad |
+| [Prüfkraft](pkhb) | Je nach Werkstoff und Kugeldurchmesser zwischen 9,807 N und 29,420 kN, definiert über den Beanspruchungsgrad |
 | Position Eindruck | (fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6507-1 Abschn. 8.8) |
 | Ablauf | 1. belasten in $7^{+1}_{-5}$ s, 2. halten (Einwirkdauer) $14^{+1}_{-4}$ s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten |
-| [Ausmessen des Eindrucks](eindr)  | Eindruckdiagonalen $d_1$ und $d_2$| 
-| [Berechnung des Härtewertes](ber) | Brinell-Härte $= 0,102\cdot\frac{2F}{\pi{} D^2(1-\sqrt{1-d^2/D^2})}$, $F$ in N, $d=\frac{d_1+d_2}{2}$ in mm |
-| [Angabe des Wertes](wert) | *Zahlenwert* **HBW** *Kugeldurchmesser* **/** *Prüfkraft in kgf* **/** *ggf. Haltezeit in s*, z.B. 133 HBW 1/30/20, 120 HBW 2,5/62,5| 
+| [Ausmessen des Eindrucks](eindrhb)  | Eindruckdiagonalen $d_1$ und $d_2$| 
+| [Berechnung des Härtewertes](berhb) | Brinell-Härte $= 0,102\cdot\frac{2F}{\pi{} D^2(1-\sqrt{1-d^2/D^2})}$, $F$ in N, $d=\frac{d_1+d_2}{2}$ in mm |
+| [Angabe des Wertes](werthb) | *Zahlenwert* **HBW** *Kugeldurchmesser* **/** *Prüfkraft in kgf* **/** *ggf. Haltezeit in s*, z.B. 133 HBW 1/30/20, 120 HBW 2,5/62,5| 
 
-(probe)=
+(probehb)=
 ## Prüfkörper
 
 Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden. 
@@ -28,7 +28,7 @@ Kann der Härtewert geshätzt werden, kann die Eindruckdiagonale $d$ aus der Gel
 [Übersicht](ueber) 
 
 
-(pk)=
+(pkhb)=
 ## Prüfkräfte
 
 Die Prüfkräfte sind so zu wählen, dass der Eindruckdurchmesser zwischen den Werten 0,24 D 0,6 D liegt. Dies wird i.A. durch die Wahl der Prüfkraft anhand des Beanspruchungsgrades $(=0,102\cdot F/D^2)$ erreicht, der für bestimmte Härteniveaus bzw. typische Werkstoffe in der DIN EN ISO 6506-1 definiert ist:
@@ -63,7 +63,7 @@ $F=\frac{\text{Beanspruchungsgrad}\cdot D^2}{0,102}$
 
 [Übersicht](ueber) 
 
-(eindr)=
+(eindrhb)=
 ## Ausmessen des Eindrucks
 Zur Bewertung des plastischen Eindrucks ist der Durchmesser des Eindrucks in zwei etwas senkrecht zueinander liegenden Richtungen zu messen. 
 
@@ -72,7 +72,7 @@ Zur Bewertung des plastischen Eindrucks ist der Durchmesser des Eindrucks in zwe
 [Übersicht](ueber) 
 
 
-(ber)=
+(berhb)=
 ## Berechnung des Härtewertes
 
 Der Härtewert ergibt sich aus der Prüfkraft $F$ und der Oberfläche des Eindrucks $A_{D}$. Die Berechnung der Oberfläche des Eindrucks ergibt sich über das "eingedrungene" [Kugelsement](https://de.wikipedia.org/wiki/Kugelsegment), über die  mittlere gemessene Eindruckhdiagonale
@@ -102,7 +102,7 @@ Hieraus resultirt der Faktor $0,102\approx1/9,80665$
 [Übersicht](ueber) 
 
 
-(wert)=
+(werthb)=
 ## Angabe des Härtewertes
 
 Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!

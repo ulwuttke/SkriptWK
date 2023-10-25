@@ -392,13 +392,13 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../KBV/KBV.html#probe"><span class="std std-ref">Prüfkörper</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#probehv"><span class="std std-ref">Prüfkörper</span></a></p></td>
 <td><p>Glatte ebene Prüffläche, Mindestdicke <span class="math notranslate nohighlight">\(1,5\cdot\textit{Diagonalenlänge}\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>Eindringkörper (fix)</p></td>
 <td><p>vierseitige Pyramide (quadratische Grundfläche, Spitzenwinkel zwischen den Flanken 136°, Spitze nicht abgerundet) aus Diamant</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../KBV/KBV.html#pk"><span class="std std-ref">Prüfkraft</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pkhv"><span class="std std-ref">Prüfkraft</span></a></p></td>
 <td><p>Je nach Anwendung zwischen 0,09807 N bis 980,7N, (fast) frei wählbar</p></td>
 </tr>
 <tr class="row-odd"><td><p>Position Eindruck</p></td>
@@ -407,20 +407,20 @@ document.write(`
 <tr class="row-even"><td><p>Ablauf</p></td>
 <td><p>1. belasten in <span class="math notranslate nohighlight">\(7^{+1}_{-5}\)</span> s, 2. halten (Einwirkdauer) <span class="math notranslate nohighlight">\(14^{+1}_{-4}\)</span> s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../KBV/KBV.html#eindr"><span class="std std-ref">Ausmessen des Eindrucks</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#eindrhv"><span class="std std-ref">Ausmessen des Eindrucks</span></a></p></td>
 <td><p>Eindruckdiagonalen <span class="math notranslate nohighlight">\(d_1\)</span> und <span class="math notranslate nohighlight">\(d_2\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../KBV/KBV.html#ber"><span class="std std-ref">Berechnung des Härtewertes</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#berhv"><span class="std std-ref">Berechnung des Härtewertes</span></a></p></td>
 <td><p>Vickers-Härte <span class="math notranslate nohighlight">\(\approx 0,1891\cdot \frac{F}{d^2}\)</span>, <span class="math notranslate nohighlight">\(F\)</span> in N mit <span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span> in mm</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../KBV/KBV.html#wert"><span class="std std-ref">Angabe des Wertes</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#werthv"><span class="std std-ref">Angabe des Wertes</span></a></p></td>
 <td><p><em>Zahlenwert</em> <strong>HV</strong> <em>Prüfkraft in kgf</em> <strong>/</strong> <em>ggf. Haltezeit in s</em>, z.B. 233 HV 30, 334 HV 10/30</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="prufkorper">
-<span id="probe"></span><h2><span class="section-number">3.2. </span>Prüfkörper<a class="headerlink" href="#prufkorper" title="Permalink to this heading">#</a></h2>
+<span id="probehv"></span><h2><span class="section-number">3.2. </span>Prüfkörper<a class="headerlink" href="#prufkorper" title="Permalink to this heading">#</a></h2>
 <p>Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden (die Probe muss eine Oberflächenbearbeitung aufweisen).
 Die Dicke der Probe muss mindestens das 1,5-Fache der Eindruckdiagonallenlänge betragen. Lässt sich die Härte einschätzen, so ergibt sich aus der Gleichung zur Berechnung des Härtewertes die Mindestdicke über</p>
 <p><span class="math notranslate nohighlight">\(\textit{Mindestdicke}=1,5\cdot d=1,5\sqrt{(0,1891\cdot F/\textit{&quot;HV&quot;}}\cdot 1\text{mm}/\sqrt{1\text{N}})\)</span></p>
@@ -430,7 +430,7 @@ Die Dicke der Probe muss mindestens das 1,5-Fache der Eindruckdiagonallenlänge 
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="prufkrafte">
-<span id="pk"></span><h2><span class="section-number">3.3. </span>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
+<span id="pkhv"></span><h2><span class="section-number">3.3. </span>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
 <p>Da sich mit dem Vickers-Diamanten als Eindringkörper im Prinzip immer auswertbare Eindrücke erzeugen lassen, gibt es keine Normvorgaben für die Wahl der Prüfkräfte. Damit ist sowohl die “normale” Härte zu prüfen, als auch die Mikrostruktur (vgl. Bereiche der nachfolgenden Tabelle). Für eine gute Auswertung sollten möglichst große Eindrücke erzeugt werden (die natürlich noch durhc die Optik auswertbar sein müssen). Damit sollten tendentiell bei härteren Werkstoffen höhere Prüfkräfte verwendet werden. Ggf. ergibt sich aus der <a class="reference internal" href="../KBV/KBV.html#probe"><span class="std std-ref">Dicke des Prüfkörpers</span></a> eine Beschränkung der Prüfkraft um nicht zu große Eindrücke zu erhalten.
 Wird die Prüfung im Rahmen einer Normprüfung oder anderen Vorgaben durchgeführt, sind hier meist Prüfkräfte definiert. Dies ist dann natürlich zu bechten.</p>
 <table class="table">
@@ -458,13 +458,13 @@ Wird die Prüfung im Rahmen einer Normprüfung oder anderen Vorgaben durchgefüh
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="ausmessen-des-eindrucks">
-<span id="eindr"></span><h2><span class="section-number">3.4. </span>Ausmessen des Eindrucks<a class="headerlink" href="#ausmessen-des-eindrucks" title="Permalink to this heading">#</a></h2>
+<span id="eindrhv"></span><h2><span class="section-number">3.4. </span>Ausmessen des Eindrucks<a class="headerlink" href="#ausmessen-des-eindrucks" title="Permalink to this heading">#</a></h2>
 <p>Zur Bewertung des plastischen Eindrucks werden die Eindruckdiagonalen gemessen. Damit sind die Diagonalen die eigendtlichen Messgrößen. Weichen die beiden gemessenen Diagonalenwerte mehr als 5% voneinander ab, so ist das im Prüfbericht zu vermerken!</p>
 <p><img alt="Eindruck" src="../_images/HVPKEindr.png" /></p>
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="berechnung-des-hartewertes">
-<span id="ber"></span><h2><span class="section-number">3.5. </span>Berechnung des Härtewertes<a class="headerlink" href="#berechnung-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<span id="berhv"></span><h2><span class="section-number">3.5. </span>Berechnung des Härtewertes<a class="headerlink" href="#berechnung-des-hartewertes" title="Permalink to this heading">#</a></h2>
 <p>der Härtewert ergibt sich aus der Prüfkraft <span class="math notranslate nohighlight">\(F\)</span> und der Oberfläche des Eindrucks <span class="math notranslate nohighlight">\(A_{D}\)</span>. Die Berechnung der Oberfläche des Eindrucks erfolgt über die Geometire des Eindringkörpers(hier die Diamantpyramide mit quadratischer Grundfläche und einem Spitzenwinkel von <span class="math notranslate nohighlight">\(\alpha=136°\)</span>) und die mittlere gemessene Eindruchdiagonale</p>
 <p><span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span></p>
 <p>Der berechnete Wert wird der Härteskala zugeordnet und ist ein reiner Zahlenwert ohne Dimension. Da die Vickers-Härteskala bereits zu beginn des 20. Jahrhunderts entwickelt wurde, hat ist mit den alten Härtewerten die alte Krafteinheit <span class="math notranslate nohighlight">\(kp=kgf\)</span> (<em>Kilopond</em>) verbunden. Die Umrechnung erfolgt über die Erdbeschleunigung:</p>
@@ -477,7 +477,7 @@ Wird die Prüfung im Rahmen einer Normprüfung oder anderen Vorgaben durchgefüh
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="angabe-des-hartewertes">
-<span id="wert"></span><h2><span class="section-number">3.6. </span>Angabe des Härtewertes<a class="headerlink" href="#angabe-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<span id="werthv"></span><h2><span class="section-number">3.6. </span>Angabe des Härtewertes<a class="headerlink" href="#angabe-des-hartewertes" title="Permalink to this heading">#</a></h2>
 <p>Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!</p>
 <p><img alt="Eindruckoberflaeche" src="../_images/HV_angabe.png" /></p>
 <p>Der Prüfbericht muss in Anlehnung an DIN EN ISO 6507-1:2018, Absch. 10 folgende Angaben enthalten:</p>

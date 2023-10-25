@@ -5,19 +5,19 @@
 
 | [Härteprüfung nach Rockwell](https://de.wikipedia.org/wiki/H%C3%A4rte#Rockwell_(HR)) |  DIN EN ISO 6508-1:2016-12  |
 | ----------- | ----------- |
-| [Prüfkörper](probe) | Glatte ebene Prüffläche, Mindestdicke: a) Diamateindringkörper $10\cdot {h}$, b) Eindringkugel $15\cdot {h}$; insbesondere darf auch die Auflage der Probe keine unebenheiten aufweisen
+| [Prüfkörper](probehr) | Glatte ebene Prüffläche, Mindestdicke: a) Diamateindringkörper $10\cdot {h}$, b) Eindringkugel $15\cdot {h}$; insbesondere darf auch die Auflage der Probe keine unebenheiten aufweisen
 | Eindringkörper | Abhängig von der Skala: Rockwell B: Kugel aus Hertmetall (früher auch gehärteter Stahl) $D=1,5875 \text{mm} $; Rockwell C: Diamatkegel mit einem Kelgelwinkel von $120°$ und einem Krümmungsradius an der Spitze von $0,2\text{mm}$ |
-| [Prüfkraft](pk) | Skalenabhänging; zu unterscheiden sind Prüfvorkraft $F_0$ und Prüfgesamtkraft $F$; Rockwell C: $F=1,471\text{kN}$; Rockwell B $F=980,7\text{N}$ |
+| [Prüfkraft](pkhr) | Skalenabhänging; zu unterscheiden sind Prüfvorkraft $F_0$ und Prüfgesamtkraft $F$; Rockwell C: $F=1,471\text{kN}$; Rockwell B $F=980,7\text{N}$ |
 | Position Eindruck | (fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6508-1 Abschn. 7.13) |
-| [Ablauf](abl) | 1. Belasten mit $F_0$ in $t \geq 2\text{s}$ und halten für $3^{+3}_{-2}\text{s}$  ; 2. Erhöhen der Kraft auf $F$ in $2\text{s}\leq{} t \leq{} 8 \text{s}$ und halten für $5^{+1}_{-3}\text{s}$ ; 4. Entlasten auf $F_0$ und ablesen des Wertes innerhalb von $4^{+1}_{-3}\text{s}$ |
-| [Ausmessen des Eindrucks](eindr)  | Eindringtiefe $h$ unter Prüfvorkraft | 
+| [Ablauf](ablhr) | 1. Belasten mit $F_0$ in $t \geq 2\text{s}$ und halten für $3^{+3}_{-2}\text{s}$  ; 2. Erhöhen der Kraft auf $F$ in $2\text{s}\leq{} t \leq{} 8 \text{s}$ und halten für $5^{+1}_{-3}\text{s}$ ; 4. Entlasten auf $F_0$ und ablesen des Wertes innerhalb von $4^{+1}_{-3}\text{s}$ |
+| [Ausmessen des Eindrucks](eindrhr)  | Eindringtiefe $h$ unter Prüfvorkraft | 
 | [Berechnung des Härtewertes](ber) | Härte wird Skalenabhängig aus der der Eindringtiefe berechnet; i.d.R. wird der Härtewert dirket and er Prüfmaschine angezeigt |
-| [Angabe des Wertes](wert) | *Zahlenwert* **HR***Skala* *soweit notwendig: Bezeichnung des Typs der verwendeten Eindringkugel (W: Wolframkarbit, S: Stahl)*, z.B. 52,3 HRC, 23 HRBW | 
+| [Angabe des Wertes](werthr) | *Zahlenwert* **HR***Skala* *soweit notwendig: Bezeichnung des Typs der verwendeten Eindringkugel (W: Wolframkarbit, S: Stahl)*, z.B. 52,3 HRC, 23 HRBW | 
 
 
 1\text{s}\leq
 
-(probe)=
+(probehr)=
 ## Prüfkörper
 
 Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden. 
@@ -34,7 +34,7 @@ Kann der Härtewert geshätzt werden, kann die Eindruckdiagonale $d$ aus der Gel
 [Übersicht](ueber) 
 
 
-(pk)=
+(pkhr)=
 ## Prüfkräfte
 
 Die Prüfkräfte sind für die jeweilige Rockwellskala festgelegt:
@@ -46,7 +46,7 @@ Die Prüfkräfte sind für die jeweilige Rockwellskala festgelegt:
 
 [Übersicht](ueber) 
 
-(abl)=
+(ablhr)=
 ## Ablauf
 
 Der Prüfablauf besteht aus dem Aufbringen der Prüfvorkraft $F_0$, dem "Nullen" der Tiefenmesusng, dem Erhöhen auf der Kraft auf die Prüfkraft $F$, dem Entlasten auf die Prüfvorkraft $F_0$ und dem Ausmessen der bleibenden Eindringtiefe $h$.
@@ -55,7 +55,7 @@ Der Prüfablauf besteht aus dem Aufbringen der Prüfvorkraft $F_0$, dem "Nullen"
 ![Eindruck](HRAbl.png)
 
 
-(eindr)=
+(eindrhr)=
 ## Ausmessen des Eindrucks
 Zur Bewertung des plastischen Eindrucks wird die bleibender Eindrucktiefe $h$ unter der weiterhin wirkenden Vorkraft $F_0$ gemessen. In der Regel wird nicht die bleibende Eindringtiefe in mm gemessen, sondernd direkt bit einem Tiefenmaß, dass der Härteskala entspricht.
 
@@ -66,7 +66,7 @@ Zur Bewertung des plastischen Eindrucks wird die bleibender Eindrucktiefe $h$ un
 [Übersicht](ueber) 
 
 
-(ber)=
+(berhr)=
 ## Berechnung des Härtewertes
 
 Aus der bleibenden Eindringtiefe $h$ wird der Härtewert berechnet. Dabei wird je Skala ein Bereich für die Eindringtiefe festgelegt und dieser Bereich in eine sinnvolle Skala eingeteilt (HRC 100 Skalenteile, HRB 130 Skalenteile):
@@ -82,7 +82,7 @@ In der Regel wird der Härtewert direkt ovn der Prüfmashcine ausgegeben. Damit 
 [Übersicht](ueber) 
 
 
-(wert)=
+(werthr)=
 ## Angabe des Härtewertes
 
 Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!
