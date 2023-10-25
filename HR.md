@@ -1,3 +1,0 @@
-# Rockwell
-
-Vickers

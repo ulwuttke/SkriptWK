@@ -1,3 +1,0 @@
-# Kerbschlagbiegeversuch
-
-KBV

@@ -1,3 +1,0 @@
-# Brinell
-
-Vickers

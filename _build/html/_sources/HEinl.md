@@ -1,3 +1,0 @@
-# Härteprüfung
-
-Vickers
