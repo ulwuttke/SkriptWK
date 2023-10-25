@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+  - caption: Härteprüfung
+    numbered: True  # Only applies to chapters in Part 1.
+    chapters:
+    - file: H_Einl
+    - file: HB/HB
+    - file: HV/HV
+    - file: HR/HR
+    - file: Stat/Stat
+  - caption: Kerbschlagbiegeversuch
+    numbered: True 
+    chapters:
+    - file: KBV_Einl
+    - file: KBV/KBV_Besch
+    - file: KBV/KBV_Auswertung
