@@ -1,5 +1,3 @@
-
-
 # Brinell
 
 (ueber)=
@@ -20,13 +18,11 @@
 ## Prüfkörper
 
 Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden. 
-Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe betragen. 
+Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe $h$ betragen. 
 
 $\textit{Mindestdicke}=8\cdot h=8\cdot\frac{D}{2}(1-\sqrt{1-d^2/D^2})$
 
-bzw. (bei einer vorhandenen Probe) die maximal zu verwendende Prüfkraft $F_{max}$ zu
-
-$F_{max}=\textit{"HV"}\cdot d^{2} / 0,1891 = \textit{"HV"}\cdot (\textit{Probendicke}/1,5)^{2} / 0,1891 \cdot 1\text{N}/(1\text{mm}^2)$
+Kann der Härtewert geshätzt werden, kann die Eindruckdiagonale $d$ aus der Gelichung für die Härteberechnung zurückgerechnet und so die Mndestdicke abgeschätzt werden.
 
 
 [Übersicht](ueber) 
@@ -42,10 +38,10 @@ Die Prüfkräfte sind so zu wählen, dass der Eindruckdurchmesser zwischen den W
 |Stahl, Nickel- und Titanleg.| |30|
 |Gusseisen |$<140$ |10 |
 | |$\geq140$ | 30 |
-|Kupfer, -leg.|$<35$ | 5 |
+|Kupfer, -legierungen |$<35$ | 5 |
 | | $35$ bis $200$  | 10 |
-| |  >$200$ | 30 |
-| Leitmetalle, -leg. | $<35$ | 2,5 |
+| | >$200$ | 30 |
+| Leitmetalle, -legierungen | $<35$ | 2,5 |
 | | $35$ bis $80$ / >$80$ | 5/10/15|
 | | >$80$ | 10/15 |
 |Blei, Zinn| | 1 |
@@ -84,17 +80,18 @@ Der Härtewert ergibt sich aus der Prüfkraft $F$ und der Oberfläche des Eindru
 $d=\frac{d_1+d_2}{2}$
 
 ![Eindruckoberflaeche](HB_Aeind.png)
+
 Mit der Oberfläche des Kugelsegments
 
 $A_D=\frac{\pi D}{2}(D-\sqrt(D^2-d^2)$
 
 ergibt sich der Härtewert
 
-$ \textit{Brinell-Härtewert} = 0,102\frac{2F}{\pi D(D-\sqrt{D^2-d^2})} $ mit $F$ in N mit $d$ in mm
+$ \textit{Brinell-Härtewert} = 0,102\frac{2F}{\pi D(D-\sqrt{D^2-d^2})} $ mit $F$ in N und $d$ in mm
 
 
 
-Der berechnete Wert wird der Härteskala zugeordnet und ist ein reiner Zahlenwert ohne Dimension. Da die Brinell-Härteskala bereits zu beginn des 20. Jahrhunderts entwickelt wurde, hat ist mit den alten Härtewerten die alte Krafteinheit $kp=kgf$ (*Kilopond*) verbunden. Die Umrechnung erfolgt über die Erdbeschleunigung:
+Der berechnete Wert wird der Härteskala zugeordnet und ist ein reiner Zahlenwert ohne Dimension. Da die Brinell-Härteskala bereits zu beginn des 20. Jahrhunderts entwickelt wurde, hat ist mit den alten Härtewerten die alte Krafteinheit $kp=kgf$ (*Kilopond*) verbunden. Die Umrechnung erfolgt über die Erdbeschleunigung $g_n$:
 
 $[F]=1 \text{N} = g_{n} \cdot 1 \text{kp}$ mit $g_{n}= 9,80665 \frac{\text{m}}{\text{s}^2}$
 

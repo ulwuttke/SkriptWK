@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Kerbschlagbiegeversuch &#8212; Laborskript WK Lab 1</title>
+    <title>6. Grundlagen &#8212; Laborskript WK Lab 1</title>
   
   
   
@@ -61,9 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'KBV';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'KBV_Einl';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Versuchsdurchführung" href="KBV/KBV_Besch.html" />
+    <link rel="prev" title="5. Auswerung" href="Stat/Stat.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,8 +165,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Stat/Stat.html">5. Auswerung</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Kerbschlagbiegeversuch</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="KBV_Einl.html">6. Grundlagen</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Grundlagen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="KBV/KBV_Besch.html">7. Versuchsdurchführung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="KBV/KBV_Auswertung.html">8. Auswertung</a></li>
 </ul>
@@ -238,7 +240,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FKBV.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FKBV_Einl.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -268,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/KBV.md" target="_blank"
+      <li><a href="_sources/KBV_Einl.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -337,7 +339,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -348,11 +352,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Kerbschlagbiegeversuch</h1>
+    <h1>Grundlagen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformungsverhalten">6.1. Verformungsverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versagensarten-bruchverhalten">6.2. Versagensarten / Bruchverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kerbschlagbiegeversuch">6.3. Kerbschlagbiegeversuch</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -362,9 +376,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="kerbschlagbiegeversuch">
-<h1>Kerbschlagbiegeversuch<a class="headerlink" href="#kerbschlagbiegeversuch" title="Permalink to this heading">#</a></h1>
-<p>KBV</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="grundlagen">
+<h1><span class="section-number">6. </span>Grundlagen<a class="headerlink" href="#grundlagen" title="Permalink to this heading">#</a></h1>
+<section id="verformungsverhalten">
+<h2><span class="section-number">6.1. </span>Verformungsverhalten<a class="headerlink" href="#verformungsverhalten" title="Permalink to this heading">#</a></h2>
+<p>Die <em>reversibele Verformung</em> wird als <em>elastische Verformung</em> bezeichnet. Die <em>bleibende Verformung</em> als <em>plastische Verformung</em>.</p>
+<p>Tritt also unter Last bei einem Werkstoff oder Bauteil eine Verformung auf und nach Wegnahme der Last geht auch die Verformung wieder komplatt zurück, handelt es sich um eine rein <em>elastische</em> Verformung. Lässt sich das Verformungsverhalten linear beschreiben, handelt es sich um eine <em>linear elastische</em> Verformung. Ist die elastische Verformug zeitabhängig, handelt es sich um eine <em>viscoelastische</em> Verformung. Metallische Werkstoffe lassen sich in der Regel linear elastisch beschreiben.</p>
+<p>Ist die Verformung nicht komplett reversibel, kommt zur elastischen Verformung die <em>plastische</em> Verformung hinzu. Die plastische Verformung ist der Verformungsanteil, der sich nciht zurückverformt. Auch dieser Verformungsanteil kann Zeitabhängig sein. Diese Verformung wird als <em>viscoplastische</em> Verformung bezeichnet. Metallische Werkstoffe zeigen in der Regel eine mehr oder weniger ausgeprägte plastische Verformung, die oft als zeitunabhängig angesehen werden kann.</p>
+<p><img alt="ElPlVerf" src="ElPlVerf.png" /></p>
+</section>
+<section id="versagensarten-bruchverhalten">
+<h2><span class="section-number">6.2. </span>Versagensarten / Bruchverhalten<a class="headerlink" href="#versagensarten-bruchverhalten" title="Permalink to this heading">#</a></h2>
+<p>Bei dem Versagen von Werkstoffen wird zwischen einem <em>spröden</em> und <em>duktilen</em> bzw. <em>zähem</em> Bruch unterschieden. Werkstoffe, die nach einer ausgeprägten plastischen Verformung versagen werden als zäh bzw. duktil bezeichnet.</p>
+<p>Werkstoffe die bis zum Bruch keine, oder nur eine geringe plastische Verformung aufzeigen werden als spröde bezeichnet.</p>
+<p><img alt="ElPlBruch" src="ElPlVerf.png" /></p>
+<p>Gewöhnlich ist duktiles Werkstoffverhalten gewünscht, d.h. es gibt einen Warnbereich vor dem Bruch.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Die Begriffe <em>zäh</em> und <em>duktil</em> werden eigentlich synonym verwendet. Der Begriff <em>zäh</em> wird in der Regel in Kombination mit Werkstoffkennwerten verwendet (z.B. Bruchzähigkeit) und beschreibt eher den Widerstand gegen Bruch bzw. Rissausbreitung. Der Begriff <em>duktil</em> beschreibt umfasst dagegen das gesamte Verformungsverhalten.</p>
+</div>
+<p>Ob ein Werkstoff zäh oder spröd bricht, ist - neben dem Werkstoff an sich -  abhängig von den Beanspruchungsbedingungen</p>
+<ul class="simple">
+<li><p>Temperatur</p></li>
+<li><p>Belastungsgeschwindigkeit</p></li>
+<li><p>Beanspruchungs-mehrachsigkeit</p></li>
+</ul>
+<p>Achtung: Es ist das zähe, bzw. spröde Werkstoff- von dem Bauteilverhalten zu unterscheiden. Auch Bauteile aus duktilen Werkstoffen können abh. von den oben gennten Bedingungen spröde, also verformungsarm, versagen.</p>
+</section>
+<section id="kerbschlagbiegeversuch">
+<h2><span class="section-number">6.3. </span>Kerbschlagbiegeversuch<a class="headerlink" href="#kerbschlagbiegeversuch" title="Permalink to this heading">#</a></h2>
+<p>Als schnelles und einfaches Prüfverfahren, zur charakterisierung des Bruchverhaltens wird der <a class="reference external" href="https://de.wikipedia.org/wiki/Kerbschlagbiegeversuch">Kerbschalgbiegeverusch</a> nach DIN EN ISO148-1 verwendet. In dem Verusch lassen sich durch tiefe Prüftemperaturen, die schlagartige Belastung und die Mehrachsigkeit durch die Kerbprobe werkstoffe unter sehr sprödbruchbegünstigenden Bedingungen Prüfen. Ergebnis der Einzelprüfung ist die Kerbschalgenergie (Kerbschalgarbeit) der Einzelprobe. Das Ergebnis eine Prüfreihe mit unterschiedlichen Temperaturen die Übergangstemperatur von sprädem zu zähem Bruchverhalten.</p>
+<p>Der Kerbschlagbiegeversuch liefert KEINE Kennwerte für die Festigkeitsrechnung (zumindest nicht direkt).
+Er dient vor allem</p>
+<ul class="simple">
+<li><p>zur Güteprüfung der Werkstoffe und</p></li>
+<li><p>zur Beurteilung der Sprödbruchneigung der Werkstoffe.</p></li>
+</ul>
+<p>Die Belastungsbedingungen im Bauteil sind in der Regel nicht direkt mit den im Belastungen im Kerbschlagbiegeversuch vergleichbar, und stehllen in der Regel eine Extrembeanspruchung dar.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -398,6 +447,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Stat/Stat.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Auswerung</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="KBV/KBV_Besch.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Versuchsdurchführung</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -407,6 +474,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformungsverhalten">6.1. Verformungsverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versagensarten-bruchverhalten">6.2. Versagensarten / Bruchverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kerbschlagbiegeversuch">6.3. Kerbschlagbiegeversuch</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
