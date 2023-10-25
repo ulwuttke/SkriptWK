@@ -7,16 +7,16 @@
 
 | [Härteprüfung nach Vickers](https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)) | DIN EN ISO 6507-1:2018-07 |
 | ----------- | ----------- |
-| [Prüfkörper](probe) | Glatte ebene Prüffläche, Mindestdicke $1,5\cdot\textit{Diagonalenlänge}$
+| [Prüfkörper](probehv) | Glatte ebene Prüffläche, Mindestdicke $1,5\cdot\textit{Diagonalenlänge}$
 | Eindringkörper (fix) | vierseitige Pyramide (quadratische Grundfläche, Spitzenwinkel zwischen den Flanken 136°, Spitze nicht abgerundet) aus Diamant |
-| [Prüfkraft](pk) | Je nach Anwendung zwischen 0,09807 N bis 980,7N, (fast) frei wählbar |
+| [Prüfkraft](pkhv) | Je nach Anwendung zwischen 0,09807 N bis 980,7N, (fast) frei wählbar |
 | Position Eindruck | (fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6507-1 Abschn. 8.8) |
 | Ablauf | 1. belasten in $7^{+1}_{-5}$ s, 2. halten (Einwirkdauer) $14^{+1}_{-4}$ s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten |
-| [Ausmessen des Eindrucks](eindr)  | Eindruckdiagonalen $d_1$ und $d_2$| 
-| [Berechnung des Härtewertes](ber) | Vickers-Härte $\approx 0,1891\cdot \frac{F}{d^2}$, $F$ in N mit $d=\frac{d_1+d_2}{2}$ in mm |
-| [Angabe des Wertes](wert) | *Zahlenwert* **HV** *Prüfkraft in kgf* **/** *ggf. Haltezeit in s*, z.B. 233 HV 30, 334 HV 10/30| 
+| [Ausmessen des Eindrucks](eindrhv)  | Eindruckdiagonalen $d_1$ und $d_2$| 
+| [Berechnung des Härtewertes](berhv) | Vickers-Härte $\approx 0,1891\cdot \frac{F}{d^2}$, $F$ in N mit $d=\frac{d_1+d_2}{2}$ in mm |
+| [Angabe des Wertes](werthv) | *Zahlenwert* **HV** *Prüfkraft in kgf* **/** *ggf. Haltezeit in s*, z.B. 233 HV 30, 334 HV 10/30| 
 
-(probe)=
+(probehv)=
 ## Prüfkörper
 
 Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden (die Probe muss eine Oberflächenbearbeitung aufweisen). 
@@ -33,7 +33,7 @@ Sind die Oberflächen gekrümmt (z.B. bei Wellen oder Achsen) ist Abschn. 7.4 de
 [Übersicht](ueber) 
 
 
-(pk)=
+(pkhv)=
 ## Prüfkräfte
 
 Da sich mit dem Vickers-Diamanten als Eindringkörper im Prinzip immer auswertbare Eindrücke erzeugen lassen, gibt es keine Normvorgaben für die Wahl der Prüfkräfte. Damit ist sowohl die "normale" Härte zu prüfen, als auch die Mikrostruktur (vgl. Bereiche der nachfolgenden Tabelle). Für eine gute Auswertung sollten möglichst große Eindrücke erzeugt werden (die natürlich noch durhc die Optik auswertbar sein müssen). Damit sollten tendentiell bei härteren Werkstoffen höhere Prüfkräfte verwendet werden. Ggf. ergibt sich aus der [Dicke des Prüfkörpers](probe) eine Beschränkung der Prüfkraft um nicht zu große Eindrücke zu erhalten. 
@@ -48,7 +48,7 @@ Wird die Prüfung im Rahmen einer Normprüfung oder anderen Vorgaben durchgefüh
 
 [Übersicht](ueber) 
 
-(eindr)=
+(eindrhv)=
 ## Ausmessen des Eindrucks
 Zur Bewertung des plastischen Eindrucks werden die Eindruckdiagonalen gemessen. Damit sind die Diagonalen die eigendtlichen Messgrößen. Weichen die beiden gemessenen Diagonalenwerte mehr als 5% voneinander ab, so ist das im Prüfbericht zu vermerken!
 
@@ -57,7 +57,7 @@ Zur Bewertung des plastischen Eindrucks werden die Eindruckdiagonalen gemessen. 
 [Übersicht](ueber) 
 
 
-(ber)=
+(berhv)=
 ## Berechnung des Härtewertes
 
 der Härtewert ergibt sich aus der Prüfkraft $F$ und der Oberfläche des Eindrucks $A_{D}$. Die Berechnung der Oberfläche des Eindrucks erfolgt über die Geometire des Eindringkörpers(hier die Diamantpyramide mit quadratischer Grundfläche und einem Spitzenwinkel von $\alpha=136°$) und die mittlere gemessene Eindruchdiagonale
@@ -81,7 +81,7 @@ $ \textit{Vickers-Härtewert} \approx 0,1891\cdot \frac{F}{d^2} $ mit $F$ in N m
 [Übersicht](ueber) 
 
 
-(wert)=
+(werthv)=
 ## Angabe des Härtewertes
 
 Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!

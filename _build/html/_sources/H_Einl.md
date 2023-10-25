@@ -8,9 +8,9 @@ Für die technische Anwendungen bei metallischen Werkstoffen sind die folgenden 
 
 - statische Krafteinwirkung
 	- Messung nach Wegnahme der Prüfkraft (Standardhärteprüfverfahren)
-		- Brinell
+		- [Brinell](HB/HB)
 		- [Vickers](HV/HV)
-		- Rockwell
+		- [Rockwell](HR/HR)
 	- Messen unter Prüfkraft
 		- Martens (auch Universalhärte, instrumentierte Eindringprüfung)
 		- TIV (Trough Indenter Viewing)[^1]

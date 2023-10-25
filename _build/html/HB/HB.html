@@ -392,13 +392,13 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../KBV/KBV.html#probe"><span class="std std-ref">Prüfkörper</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#probehb"><span class="std std-ref">Prüfkörper</span></a></p></td>
 <td><p>Glatte ebene Prüffläche, Mindestdicke <span class="math notranslate nohighlight">\(8\cdot\textit{Eindringtiefe}\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>Eindringkörper</p></td>
 <td><p>Kugel mit <span class="math notranslate nohighlight">\(D=1; 2,5; 5; 10 \text{ mm}\)</span> aus Hartmetall (früher auch gehärteter Stahl)</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../KBV/KBV.html#pk"><span class="std std-ref">Prüfkraft</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pkhb"><span class="std std-ref">Prüfkraft</span></a></p></td>
 <td><p>Je nach Werkstoff und Kugeldurchmesser zwischen 9,807 N und 29,420 kN, definiert über den Beanspruchungsgrad</p></td>
 </tr>
 <tr class="row-odd"><td><p>Position Eindruck</p></td>
@@ -407,20 +407,20 @@ document.write(`
 <tr class="row-even"><td><p>Ablauf</p></td>
 <td><p>1. belasten in <span class="math notranslate nohighlight">\(7^{+1}_{-5}\)</span> s, 2. halten (Einwirkdauer) <span class="math notranslate nohighlight">\(14^{+1}_{-4}\)</span> s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../KBV/KBV.html#eindr"><span class="std std-ref">Ausmessen des Eindrucks</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#eindrhb"><span class="std std-ref">Ausmessen des Eindrucks</span></a></p></td>
 <td><p>Eindruckdiagonalen <span class="math notranslate nohighlight">\(d_1\)</span> und <span class="math notranslate nohighlight">\(d_2\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../KBV/KBV.html#ber"><span class="std std-ref">Berechnung des Härtewertes</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#berhb"><span class="std std-ref">Berechnung des Härtewertes</span></a></p></td>
 <td><p>Brinell-Härte <span class="math notranslate nohighlight">\(= 0,102\cdot\frac{2F}{\pi{} D^2(1-\sqrt{1-d^2/D^2})}\)</span>, <span class="math notranslate nohighlight">\(F\)</span> in N, <span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span> in mm</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../KBV/KBV.html#wert"><span class="std std-ref">Angabe des Wertes</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#werthb"><span class="std std-ref">Angabe des Wertes</span></a></p></td>
 <td><p><em>Zahlenwert</em> <strong>HBW</strong> <em>Kugeldurchmesser</em> <strong>/</strong> <em>Prüfkraft in kgf</em> <strong>/</strong> <em>ggf. Haltezeit in s</em>, z.B. 133 HBW 1/30/20, 120 HBW 2,5/62,5</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="prufkorper">
-<span id="probe"></span><h2><span class="section-number">2.2. </span>Prüfkörper<a class="headerlink" href="#prufkorper" title="Permalink to this heading">#</a></h2>
+<span id="probehb"></span><h2><span class="section-number">2.2. </span>Prüfkörper<a class="headerlink" href="#prufkorper" title="Permalink to this heading">#</a></h2>
 <p>Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden.
 Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe <span class="math notranslate nohighlight">\(h\)</span> betragen.</p>
 <p><span class="math notranslate nohighlight">\(\textit{Mindestdicke}=8\cdot h=8\cdot\frac{D}{2}(1-\sqrt{1-d^2/D^2})\)</span></p>
@@ -428,7 +428,7 @@ Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe <span class="m
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="prufkrafte">
-<span id="pk"></span><h2><span class="section-number">2.3. </span>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
+<span id="pkhb"></span><h2><span class="section-number">2.3. </span>Prüfkräfte<a class="headerlink" href="#prufkrafte" title="Permalink to this heading">#</a></h2>
 <p>Die Prüfkräfte sind so zu wählen, dass der Eindruckdurchmesser zwischen den Werten 0,24 D 0,6 D liegt. Dies wird i.A. durch die Wahl der Prüfkraft anhand des Beanspruchungsgrades <span class="math notranslate nohighlight">\((=0,102\cdot F/D^2)\)</span> erreicht, der für bestimmte Härteniveaus bzw. typische Werkstoffe in der DIN EN ISO 6506-1 definiert ist:</p>
 <table class="table">
 <thead>
@@ -516,13 +516,13 @@ Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe <span class="m
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="ausmessen-des-eindrucks">
-<span id="eindr"></span><h2><span class="section-number">2.4. </span>Ausmessen des Eindrucks<a class="headerlink" href="#ausmessen-des-eindrucks" title="Permalink to this heading">#</a></h2>
+<span id="eindrhb"></span><h2><span class="section-number">2.4. </span>Ausmessen des Eindrucks<a class="headerlink" href="#ausmessen-des-eindrucks" title="Permalink to this heading">#</a></h2>
 <p>Zur Bewertung des plastischen Eindrucks ist der Durchmesser des Eindrucks in zwei etwas senkrecht zueinander liegenden Richtungen zu messen.</p>
 <p><img alt="Eindruck" src="../_images/HBPKEindr.png" /></p>
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="berechnung-des-hartewertes">
-<span id="ber"></span><h2><span class="section-number">2.5. </span>Berechnung des Härtewertes<a class="headerlink" href="#berechnung-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<span id="berhb"></span><h2><span class="section-number">2.5. </span>Berechnung des Härtewertes<a class="headerlink" href="#berechnung-des-hartewertes" title="Permalink to this heading">#</a></h2>
 <p>Der Härtewert ergibt sich aus der Prüfkraft <span class="math notranslate nohighlight">\(F\)</span> und der Oberfläche des Eindrucks <span class="math notranslate nohighlight">\(A_{D}\)</span>. Die Berechnung der Oberfläche des Eindrucks ergibt sich über das “eingedrungene” <a class="reference external" href="https://de.wikipedia.org/wiki/Kugelsegment">Kugelsement</a>, über die  mittlere gemessene Eindruckhdiagonale</p>
 <p><span class="math notranslate nohighlight">\(d=\frac{d_1+d_2}{2}\)</span></p>
 <p><img alt="Eindruckoberflaeche" src="../_images/HB_Aeind.png" /></p>
@@ -536,7 +536,7 @@ Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe <span class="m
 <p><a class="reference internal" href="../KBV/KBV.html#ueber"><span class="std std-ref">Übersicht</span></a></p>
 </section>
 <section id="angabe-des-hartewertes">
-<span id="wert"></span><h2><span class="section-number">2.6. </span>Angabe des Härtewertes<a class="headerlink" href="#angabe-des-hartewertes" title="Permalink to this heading">#</a></h2>
+<span id="werthb"></span><h2><span class="section-number">2.6. </span>Angabe des Härtewertes<a class="headerlink" href="#angabe-des-hartewertes" title="Permalink to this heading">#</a></h2>
 <p>Da die Härte ein relative Maß ist, die Maßzahlen unterschiedlicher Skalen nicht direkt vergleichbar sind und die Härtewerte von den Prüfbedingungen abhängen, ist eine korrekte Angabe des Härtewertes nach der jeweiligen Prüfnorm essentiell. Ansonsten ist der Zahlenwert nutzlos!</p>
 <p><img alt="Eindruckoberflaeche" src="../_images/HB_angabe.png" /></p>
 <p>Der Prüfbericht muss in Anlehnung an DIN EN ISO 6506-1:2015, Absch. 9 folgende Angaben enthalten:</p>
