@@ -9,7 +9,7 @@ Tritt also unter Last bei einem Werkstoff oder Bauteil eine Verformung auf und n
 Ist die Verformung nicht komplett reversibel, kommt zur elastischen Verformung die *plastische* Verformung hinzu. Die plastische Verformung ist der Verformungsanteil, der sich nciht zurückverformt. Auch dieser Verformungsanteil kann Zeitabhängig sein. Diese Verformung wird als *viscoplastische* Verformung bezeichnet. Metallische Werkstoffe zeigen in der Regel eine mehr oder weniger ausgeprägte plastische Verformung, die oft als zeitunabhängig angesehen werden kann. 
 
 
-![ElPlVerf](ElPlVerf.png)
+![ElPlVerf](KBV/ElPlVerf.png)
 
 
 ## Versagensarten / Bruchverhalten
@@ -18,7 +18,7 @@ Bei dem Versagen von Werkstoffen wird zwischen einem *spröden* und *duktilen* b
 
 Werkstoffe die bis zum Bruch keine, oder nur eine geringe plastische Verformung aufzeigen werden als spröde bezeichnet.
 
-![ElPlBruch](ElPlVerf.png)
+![ZaeSpBruch](KBV/ZaeSpBruch.png)
 
 Gewöhnlich ist duktiles Werkstoffverhalten gewünscht, d.h. es gibt einen Warnbereich vor dem Bruch. 
 

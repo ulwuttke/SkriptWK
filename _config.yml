@@ -3,7 +3,7 @@
 
 title: Laborskript WK Lab 1 
 author: U. Wuttke
-logo: WP1_Vickers.png
+logo: LogoWP1.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
