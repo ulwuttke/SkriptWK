@@ -9,7 +9,7 @@ Im Kerbschlagbiegeversuch wird die Kerbprobe mit einem Pendelhammer zerschlagen 
 
 Bei gegebener Masse des Pendelhammers $m$ ergibt sich die Kerbschlagenergie mit der Erdbeschleunigung $g$ wie folgt:
 
-- potentielle Anfangsenergie $K_p=E_1=m \cdot h_1$
+- potentielle Anfangsenergie $K_p=E_1=m \cdot g \cdot h_1$
 - potentielle energie des Hammers, nach dem Durchschlagen der Probe $E_4=m \cdot g \cdot h_4$
 - **verbrauchte Schlagenergie** $KU\text{ bzw. }KV=E_1-E_4=m \cdot g\cdot(h_1-h_4)$ 
 
