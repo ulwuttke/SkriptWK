@@ -19,3 +19,14 @@ parts:
     - file: KBV_Einl
     - file: KBV/KBV_Besch
     - file: KBV/KBV_Auswertung
+  - caption: Zugversuch
+    numbered: True 
+    chapters:
+    - file: ZV_Einl
+    - file: ZV/ZV_Durch
+    - file: ZV/ZV_Kenn
+  - caption: Metallografie
+    numbered: True 
+    chapters:
+    - file: Met_Einl
+    - file: Met/Met_Bsp
