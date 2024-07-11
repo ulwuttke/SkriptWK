@@ -3,10 +3,9 @@
 
 format: jb-book
 root: intro
-
 parts:
   - caption: Härteprüfung
-    numbered: True  # Only applies to chapters in Part 1.
+    numbered: True  
     chapters:
     - file: H_Einl
     - file: HB/HB
