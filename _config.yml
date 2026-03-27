@@ -1,9 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Laborskript WK Lab 1 
+title: Laborskript WK Lab 
 author: U. Wuttke
 logo: LogoWP1.png
+copyright: "03/2026"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>9. Grundlagen &#8212; Laborskript WK Lab 1</title>
+    <title>9. Grundlagen &#8212; Laborskript WK Lab</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ZV_Einl';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="10. Durchfürhung" href="ZV/ZV_Durch.html" />
+    <link rel="next" title="10. Durchführung der Prüfung" href="ZV/ZV_Durch.html" />
     <link rel="prev" title="8. Auswertung" href="KBV/KBV_Auswertung.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -175,13 +175,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zugversuch</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Durch.html">10. Durchfürhung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Kenn.html">11. Auswertung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Durch.html">10. Durchführung der Prüfung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Kenn.html">11. Auswertung des Laborversuchs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Metallografie</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Met_Einl.html">12. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Met/Met_Bsp.html">13. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Met/Met_Besch.html">13. Beschreibung der Arbeitsschritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Met/Met_Bsp.html">14. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
 </ul>
 
     </div>
@@ -375,8 +376,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zugversuch">9.1. Zugversuch</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnnugsgroszen-allg">9.2. Berechnnugsgrößen, allg.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kennwerte-nach-din-en-iso-6892-1-2020-06-ubersicht">9.1. Kennwerte nach DIN EN ISO 6892-1:2020-06, Übersicht</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beschreibung">9.2. Beschreibung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnnugsgroszen-allg">9.3. Berechnnugsgrößen, allg.</a></li>
 </ul>
             </nav>
         </div>
@@ -390,8 +392,48 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="grundlagen">
 <h1><span class="section-number">9. </span>Grundlagen<a class="headerlink" href="#grundlagen" title="Permalink to this heading">#</a></h1>
-<section id="zugversuch">
-<h2><span class="section-number">9.1. </span>Zugversuch<a class="headerlink" href="#zugversuch" title="Permalink to this heading">#</a></h2>
+<section id="kennwerte-nach-din-en-iso-6892-1-2020-06-ubersicht">
+<h2><span class="section-number">9.1. </span>Kennwerte nach DIN EN ISO 6892-1:2020-06, Übersicht<a class="headerlink" href="#kennwerte-nach-din-en-iso-6892-1-2020-06-ubersicht" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Kennwert</p></th>
+<th class="head"><p>Definiton</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Anfangsquerschnittsfläche</p></td>
+<td><p><span class="math notranslate nohighlight">\(S_0=\pi d_0^2/4\)</span> (Kreisquerschnitt)</p></td>
+</tr>
+<tr class="row-odd"><td><p>kleinster Querschnitt nach Bruch</p></td>
+<td><p><span class="math notranslate nohighlight">\(S_u=\pi d_u^2/4\)</span> (Kreisquerschnitt)</p></td>
+</tr>
+<tr class="row-even"><td><p>obere Streckgrenze</p></td>
+<td><p><span class="math notranslate nohighlight">\(R_{eH}=F_{eH}/S_0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>0,2%-Dehngrenze</p></td>
+<td><p><span class="math notranslate nohighlight">\(R_{p0,2}=F_{p0,2}/S_0\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Zugfestigkeit</p></td>
+<td><p><span class="math notranslate nohighlight">\(R_{m}=F_{m}/S_0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Reissfestigkeit (nicht in der DIN EN ISO 6892-1 enthalten)</p></td>
+<td><p><span class="math notranslate nohighlight">\(R_u=F_u/S_u\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Bruchdehnung</p></td>
+<td><p><span class="math notranslate nohighlight">\(A=(L_u-L_0)/L_0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Brucheinschnürung</p></td>
+<td><p><span class="math notranslate nohighlight">\(Z=(S_0-S_u)/S_0\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>E-Modul</p></td>
+<td><p><span class="math notranslate nohighlight">\(E=(R_2-R_1)/(e_2-e_1)=\Delta R / \Delta e \text{   } (=\Delta \sigma / \Delta \epsilon )\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="SigEps" src="_images/SigEps.png" /></p>
+</section>
+<section id="beschreibung">
+<h2><span class="section-number">9.2. </span>Beschreibung<a class="headerlink" href="#beschreibung" title="Permalink to this heading">#</a></h2>
 <p>Der Zugversuch</p>
 <ul class="simple">
 <li><p>liefert die wichtigsten Werkstoffkennwerte für die Bauteildimensionierung (Festigkeits- und Verformbarkeitskennwerte)</p></li>
@@ -399,15 +441,15 @@ document.write(`
 <li><p>ist ein zerstörendes Prüfverfahren</p></li>
 </ul>
 <p>Für verschiedene Werktosffgruppen gibt es unterschiedliche Prüfnormen, in denen der Zugversuche geregelt ist und in denen auch die Angaben zur Prüfung festgelegt sind. Im folgenden wird sich auf die <em>DIN EN ISO 6892-1:2020-06, Metallische Werkstoffe - Zugversuch - Teil 1: Prüfverfahren bei Raumtemperatur (ISO 6892-1:2019); Deutsche Fassung EN ISO 6892-1:2019</em> bezogen.</p>
-<p>Die Prüfung erfolgt an einer glatten Zugprobe (homogener Beanspruchungszustand) unter einachsigem Zug (einachsiger Spannungszustand). Die Prüfung erfolgt quasistatisch, das bedeutet, dass kennwerte (fast) keine zeitabhänigen Effekte abbilden.<br />
-Die Last wird weggeregelt aufgebracht, duch ein konstantes Verfahren der Traverse der Prüfmaschine. Die dabei entstehenden Kräfte und die Verformung direkt an der Probe werden gemessen.</p>
+<p>Die Prüfung erfolgt an einer glatten Zugprobe (homogener Beanspruchungszustand) unter einachsigem Zug (einachsiger Spannungszustand). Die Prüfung erfolgt quasistatisch. Die Kennwerte beziehen sich also auf eine vorwiegend ruhende Beanspruchung (kein Einfluss der Prüfgeschwindigkeit).<br />
+Die Last wird weggeregelt aufgebracht, duch ein konstantes Verfahren der Traverse der Prüfmaschine. Die dabei entstehenden Kräfte und die Verformung direkt an der Probe werden im Versuch mit gemessen.</p>
 <p><a class="reference external" href="https://youtu.be/Hy4yZFu-dWU?si=zwWEQoiJbFbOxBS6">Zugversuch in der Werkstoffprüfung</a><br />
 <a class="reference external" href="https://youtu.be/QSztAECV4V0?si=aQl4yDS6y3alHko8">Der Zugversuch erklärt</a></p>
 </section>
 <section id="berechnnugsgroszen-allg">
-<h2><span class="section-number">9.2. </span>Berechnnugsgrößen, allg.<a class="headerlink" href="#berechnnugsgroszen-allg" title="Permalink to this heading">#</a></h2>
-<p>Um von der Probenform und größe unabhänige Werstoffkennwerte zu erhalten, werden als Kennwerte nicht die direkten Messwerte der Kraft und der Verlängerung verwendet, sondern die bezogene Größen <em>Spannung</em> und <em>Dehnung</em>.</p>
-<p><img alt="SpDe" src="ZV/SpDe.png" /></p>
+<h2><span class="section-number">9.3. </span>Berechnnugsgrößen, allg.<a class="headerlink" href="#berechnnugsgroszen-allg" title="Permalink to this heading">#</a></h2>
+<p>Um von der Probenform und größe unabhänige Werstoffkennwerte zu erhalten, werden als Kennwerte nicht die direkten Messwerte <em>Kraft</em> und <em>Verlängerung</em> verwendet, sondern die bezogene Größen <em>Spannung</em> und <em>Dehnung</em>.</p>
+<p><img alt="SpDe" src="_images/SpDe.png" /></p>
 <p>Allgemein finden sich in der Literatur für die Spannung und die Dehnung die folgenden definitionen:<br />
 <span class="math notranslate nohighlight">\(\sigma=F/A\)</span>; die Spannung <span class="math notranslate nohighlight">\(\sigma\)</span> ergibt sich aus der Kraft <span class="math notranslate nohighlight">\(F\)</span> bezogen auf die Fläche <span class="math notranslate nohighlight">\(A\)</span>.<br />
 <span class="math notranslate nohighlight">\(\epsilon=\Delta l/l_{0}\)</span>; die Dehnung <span class="math notranslate nohighlight">\(\epsilon\)</span> ergibt sich aus der Längenändeurng <span class="math notranslate nohighlight">\(\Delta l\)</span> bezogen auf die Messlänge <span class="math notranslate nohighlight">\(l_0\)</span></p>
@@ -462,7 +504,7 @@ Die Last wird weggeregelt aufgebracht, duch ein konstantes Verfahren der Travers
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>Durchfürhung</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Durchführung der Prüfung</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -484,8 +526,9 @@ Die Last wird weggeregelt aufgebracht, duch ein konstantes Verfahren der Travers
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zugversuch">9.1. Zugversuch</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnnugsgroszen-allg">9.2. Berechnnugsgrößen, allg.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kennwerte-nach-din-en-iso-6892-1-2020-06-ubersicht">9.1. Kennwerte nach DIN EN ISO 6892-1:2020-06, Übersicht</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beschreibung">9.2. Beschreibung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berechnnugsgroszen-allg">9.3. Berechnnugsgrößen, allg.</a></li>
 </ul>
   </nav></div>
 
@@ -509,7 +552,7 @@ By U. Wuttke
     
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 03/2026.
       <br/>
     
   </p>

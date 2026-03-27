@@ -1,5 +1,13 @@
 # Auswertung
 
+## Vorbemerkungen
+
+Für die Auswertung des Kerbschlagbiegeversuchs in Bezug auf die Übergangstemperatur $T_t$ werden in der DIN EN ISO 148-1:2017-05 Anhang C und D unterschiedliche Verfahren beschieben. Welches Verfahren wie genutzt werden soll, muss für die jeweilige Anwendung seperat festgelegt werden (z.B. über die Regelung in der entsprechenden Produktnorm). 
+
+```{note}
+Die unterschiedlichen Auswerteverfahren führen zu nicht direkt vergleichbaren Ergebnissen!
+```
+
 ## Bewertung des Gleit-/ Sprödbruchanteils
 
 Der Gleitbruchanteil (= 1-Sprödbruchanteil) (Anteil der zähen oder duktilen Bruchstruktur auf der Bruchfläche) lässt isch über die DIN EN ISO 148-1 Anahng C bewerten. Hierfür sind die unterschiedlichen Bruchstrukturen auf der Bruchfläche zu identifizieren: 
@@ -25,7 +33,7 @@ Werkstoffabhängig lassen sich unterschiedliche Charakteristiken festellen:
 
 ## Ermittlung der Übergangstemperatur
 
-Die Übergangstemperatur $T_t$ ist die Temperatur, die den Temperaturbereich des Steilabfalls kennzeichnet. Sie kann auf unterschiedliche Arten ermittelt werden (vgl. DIN EN ISO 148-1 Anhang D.2). Im folgenden werden nur zwei arten genannt.
+Die Übergangstemperatur $T_t$ ist die Temperatur, die den Temperaturbereich des Steilabfalls kennzeichnet. Sie kann auf unterschiedliche Arten ermittelt werden (vgl. DIN EN ISO 148-1 Anhang D.2). Im Folgenden werden nur zwei Arten genannt.
 
 ```{note}
 Die nach unterschiedlichen Verfahren ermittelten Übergangstemperaturen sind nicht direkt miteinander vergleichbar. Das Verfahren muss daher vorgegeben werden (z.B. in der jeweiligen Produktnorm)!

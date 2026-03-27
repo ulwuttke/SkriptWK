@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>6. Grundlagen &#8212; Laborskript WK Lab 1</title>
+    <title>6. Grundlagen &#8212; Laborskript WK Lab</title>
   
   
   
@@ -173,13 +173,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zugversuch</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="ZV_Einl.html">9. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Durch.html">10. Durchfürhung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Kenn.html">11. Auswertung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Durch.html">10. Durchführung der Prüfung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZV/ZV_Kenn.html">11. Auswertung des Laborversuchs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Metallografie</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Met_Einl.html">12. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Met/Met_Bsp.html">13. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Met/Met_Besch.html">13. Beschreibung der Arbeitsschritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Met/Met_Bsp.html">14. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
 </ul>
 
     </div>
@@ -373,9 +374,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformungsverhalten">6.1. Verformungsverhalten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versagensarten-bruchverhalten">6.2. Versagensarten / Bruchverhalten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kerbschlagbiegeversuch">6.3. Kerbschlagbiegeversuch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorbemerkungen">6.1. Vorbemerkungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformungsverhalten">6.2. Verformungsverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versagensarten-bruchverhalten">6.3. Versagensarten / Bruchverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kerbschlagbiegeversuch">6.4. Kerbschlagbiegeversuch</a></li>
 </ul>
             </nav>
         </div>
@@ -389,15 +391,20 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="grundlagen">
 <h1><span class="section-number">6. </span>Grundlagen<a class="headerlink" href="#grundlagen" title="Permalink to this heading">#</a></h1>
+<section id="vorbemerkungen">
+<h2><span class="section-number">6.1. </span>Vorbemerkungen<a class="headerlink" href="#vorbemerkungen" title="Permalink to this heading">#</a></h2>
+<p>Das Versagensverhalten von Werkstoffen ist nicht alleine vom Werkstoff, sondern auch von der Beanspruchungsbedingungen abhänig. Bei metallischen Werkstoffe sind hier als wesentliche Einflussgrößen neben der Beanspruchungshöhe die <em>Beanspruchungsmehrachsigkeit</em>, die <em>Beanspruchungsgeschwindigkeit</em> und <em>Temperatur</em> zu nennen. Damit kann es passieren, dass ein eigentlich gutmütiger zäh-brechender Werkstoff unter extrembedingungen verformungsarm, also spröde versagt. Ein klassische Beispiel für ein solches Versagen sind die “Sprödbruche” der sog. <a class="reference external" href="https://metallurgyandmaterials.wordpress.com/2015/12/25/liberty-ship-failures/solche">Liberty-Schiffe</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Liberty_ship">WiKi</a>.</p>
+<p>Werkstoffe, mit einem ausgeprägten “spröd-duktil-Übergangsverhalten” sind beispielsweise Stähle mit ferritisch-perlitischem Gefüge (z.B. niedriglegierte Baustähle wie der S235 oder der S355). Werkstoffe die dies nicht zeigen sind z.B. Stähle mit austenitischem Gefüge wie z.B. der X5CrNi18-10 (1.4301, auch hisorisch V2A-<em>Versuchsschmelze 2 Austenit</em>-Stahl) bezeichnet. Begründet wird dieses unterschiedliche Verhalten über den jeweiligen Gittertyp des Gefüges und dessen unterschiede in der Kombination von Gleitsystemen und Packungsdichte.</p>
+</section>
 <section id="verformungsverhalten">
-<h2><span class="section-number">6.1. </span>Verformungsverhalten<a class="headerlink" href="#verformungsverhalten" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.2. </span>Verformungsverhalten<a class="headerlink" href="#verformungsverhalten" title="Permalink to this heading">#</a></h2>
 <p>Die <em>reversibele Verformung</em> wird als <em>elastische Verformung</em> bezeichnet. Die <em>bleibende Verformung</em> als <em>plastische Verformung</em>.</p>
 <p>Tritt also unter Last bei einem Werkstoff oder Bauteil eine Verformung auf und nach Wegnahme der Last geht auch die Verformung wieder komplatt zurück, handelt es sich um eine rein <em>elastische</em> Verformung. Lässt sich das Verformungsverhalten linear beschreiben, handelt es sich um eine <em>linear elastische</em> Verformung. Ist die elastische Verformug zeitabhängig, handelt es sich um eine <em>viscoelastische</em> Verformung. Metallische Werkstoffe lassen sich in der Regel linear elastisch beschreiben.</p>
 <p>Ist die Verformung nicht komplett reversibel, kommt zur elastischen Verformung die <em>plastische</em> Verformung hinzu. Die plastische Verformung ist der Verformungsanteil, der sich nciht zurückverformt. Auch dieser Verformungsanteil kann Zeitabhängig sein. Diese Verformung wird als <em>viscoplastische</em> Verformung bezeichnet. Metallische Werkstoffe zeigen in der Regel eine mehr oder weniger ausgeprägte plastische Verformung, die oft als zeitunabhängig angesehen werden kann.</p>
 <p><img alt="ElPlVerf" src="_images/ElPlVerf.png" /></p>
 </section>
 <section id="versagensarten-bruchverhalten">
-<h2><span class="section-number">6.2. </span>Versagensarten / Bruchverhalten<a class="headerlink" href="#versagensarten-bruchverhalten" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.3. </span>Versagensarten / Bruchverhalten<a class="headerlink" href="#versagensarten-bruchverhalten" title="Permalink to this heading">#</a></h2>
 <p>Bei dem Versagen von Werkstoffen wird zwischen einem <em>spröden</em> und <em>duktilen</em> bzw. <em>zähem</em> Bruch unterschieden. Werkstoffe, die nach einer ausgeprägten plastischen Verformung versagen werden als zäh bzw. duktil bezeichnet.</p>
 <p>Werkstoffe die bis zum Bruch keine, oder nur eine geringe plastische Verformung aufzeigen werden als spröde bezeichnet.</p>
 <p><img alt="ZaeSpBruch" src="_images/ZaeSpBruch.png" /></p>
@@ -406,7 +413,7 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>Die Begriffe <em>zäh</em> und <em>duktil</em> werden eigentlich synonym verwendet. Der Begriff <em>zäh</em> wird in der Regel in Kombination mit Werkstoffkennwerten verwendet (z.B. Bruchzähigkeit) und beschreibt eher den Widerstand gegen Bruch bzw. Rissausbreitung. Der Begriff <em>duktil</em> beschreibt umfasst dagegen das gesamte Verformungsverhalten.</p>
 </div>
-<p>Ob ein Werkstoff zäh oder spröd bricht, ist - neben dem Werkstoff an sich -  abhängig von den Beanspruchungsbedingungen</p>
+<p>Wie eingangs beschrieben ist das Bruchverhalten - neben dem Werkstoff an sich -  abhängig von den Beanspruchungsbedingungen</p>
 <ul class="simple">
 <li><p>Temperatur</p></li>
 <li><p>Belastungsgeschwindigkeit</p></li>
@@ -415,8 +422,9 @@ document.write(`
 <p>Achtung: Es ist das zähe, bzw. spröde Werkstoff- von dem Bauteilverhalten zu unterscheiden. Auch Bauteile aus duktilen Werkstoffen können abh. von den oben gennten Bedingungen spröde, also verformungsarm, versagen.</p>
 </section>
 <section id="kerbschlagbiegeversuch">
-<h2><span class="section-number">6.3. </span>Kerbschlagbiegeversuch<a class="headerlink" href="#kerbschlagbiegeversuch" title="Permalink to this heading">#</a></h2>
-<p>Als schnelles und einfaches Prüfverfahren, zur charakterisierung des Bruchverhaltens wird der <a class="reference external" href="https://de.wikipedia.org/wiki/Kerbschlagbiegeversuch">Kerbschalgbiegeverusch</a> nach DIN EN ISO148-1 verwendet. In dem Verusch lassen sich durch tiefe Prüftemperaturen, die schlagartige Belastung und die Mehrachsigkeit durch die Kerbprobe werkstoffe unter sehr sprödbruchbegünstigenden Bedingungen Prüfen. Ergebnis der Einzelprüfung ist die Kerbschalgenergie (Kerbschalgarbeit) der Einzelprobe. Das Ergebnis eine Prüfreihe mit unterschiedlichen Temperaturen die Übergangstemperatur von sprädem zu zähem Bruchverhalten.</p>
+<h2><span class="section-number">6.4. </span>Kerbschlagbiegeversuch<a class="headerlink" href="#kerbschlagbiegeversuch" title="Permalink to this heading">#</a></h2>
+<p>Als schnelles und einfaches Prüfverfahren, zur charakterisierung des Bruchverhaltens wird der <a class="reference external" href="https://de.wikipedia.org/wiki/Kerbschlagbiegeversuch">Kerbschalgbiegeverusch</a> verwendet. Für Metalle ist das Verfahren in der DIN EN ISO 148-1:2017-05 <em>Metallische Werkstoffe — Kerbschlagbiegeversuch nach Charpy — Teil 1: Prüfverfahren</em> beschrieben.
+In dem Versuch lassen sich durch tiefe Prüftemperaturen, die schlagartige Belastung und die Mehrachsigkeit durch die Kerbprobe Werkstoffe unter sehr sprödbruchbegünstigenden Bedingungen Prüfen. Ergebnis der Einzelprüfung ist die Kerbschalgenergie (Kerbschalgarbeit) der Einzelprobe. Das Ergebnis eine Prüfreihe mit unterschiedlichen Temperaturen die Übergangstemperatur, die den Übergang von sprödem zu zähem Bruchverhalten charakterisiert.</p>
 <p>Der Kerbschlagbiegeversuch liefert KEINE Kennwerte für die Festigkeitsrechnung (zumindest nicht direkt).
 Er dient vor allem</p>
 <ul class="simple">
@@ -494,9 +502,10 @@ Er dient vor allem</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformungsverhalten">6.1. Verformungsverhalten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versagensarten-bruchverhalten">6.2. Versagensarten / Bruchverhalten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kerbschlagbiegeversuch">6.3. Kerbschlagbiegeversuch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorbemerkungen">6.1. Vorbemerkungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformungsverhalten">6.2. Verformungsverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versagensarten-bruchverhalten">6.3. Versagensarten / Bruchverhalten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kerbschlagbiegeversuch">6.4. Kerbschlagbiegeversuch</a></li>
 </ul>
   </nav></div>
 
@@ -520,7 +529,7 @@ By U. Wuttke
     
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 03/2026.
       <br/>
     
   </p>

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>8. Auswertung &#8212; Laborskript WK Lab 1</title>
+    <title>8. Auswertung &#8212; Laborskript WK Lab</title>
   
   
   
@@ -175,13 +175,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zugversuch</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ZV_Einl.html">9. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ZV/ZV_Durch.html">10. Durchfürhung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ZV/ZV_Kenn.html">11. Auswertung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ZV/ZV_Durch.html">10. Durchführung der Prüfung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ZV/ZV_Kenn.html">11. Auswertung des Laborversuchs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Metallografie</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Met_Einl.html">12. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Met/Met_Bsp.html">13. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Met/Met_Besch.html">13. Beschreibung der Arbeitsschritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Met/Met_Bsp.html">14. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
 </ul>
 
     </div>
@@ -375,11 +376,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bewertung-des-gleit-sprodbruchanteils">8.1. Bewertung des Gleit-/ Sprödbruchanteils</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#darstellung-als-verbrauchte-schlagenergie-temperatur-kurve">8.2. Darstellung als “Verbrauchte Schlagenergie”-Temperatur-Kurve</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ermittlung-der-ubergangstemperatur">8.3. Ermittlung der Übergangstemperatur</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie">8.3.1. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t27J}\)</span> bei 27J verbrauchter Schlagenergie</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage">8.3.2. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t50\%US}\)</span> bei 50% der verbrauchten Schlagenergie der Hochlage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorbemerkungen">8.1. Vorbemerkungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bewertung-des-gleit-sprodbruchanteils">8.2. Bewertung des Gleit-/ Sprödbruchanteils</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#darstellung-als-verbrauchte-schlagenergie-temperatur-kurve">8.3. Darstellung als “Verbrauchte Schlagenergie”-Temperatur-Kurve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ermittlung-der-ubergangstemperatur">8.4. Ermittlung der Übergangstemperatur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie">8.4.1. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t27J}\)</span> bei 27J verbrauchter Schlagenergie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage">8.4.2. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t50\%US}\)</span> bei 50% der verbrauchten Schlagenergie der Hochlage</a></li>
 </ul>
 </li>
 </ul>
@@ -395,8 +397,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="auswertung">
 <h1><span class="section-number">8. </span>Auswertung<a class="headerlink" href="#auswertung" title="Permalink to this heading">#</a></h1>
+<section id="vorbemerkungen">
+<h2><span class="section-number">8.1. </span>Vorbemerkungen<a class="headerlink" href="#vorbemerkungen" title="Permalink to this heading">#</a></h2>
+<p>Für die Auswertung des Kerbschlagbiegeversuchs in Bezug auf die Übergangstemperatur <span class="math notranslate nohighlight">\(T_t\)</span> werden in der DIN EN ISO 148-1:2017-05 Anhang C und D unterschiedliche Verfahren beschieben. Welches Verfahren wie genutzt werden soll, muss für die jeweilige Anwendung seperat festgelegt werden (z.B. über die Regelung in der entsprechenden Produktnorm).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Die unterschiedlichen Auswerteverfahren führen zu nicht direkt vergleichbaren Ergebnissen!</p>
+</div>
+</section>
 <section id="bewertung-des-gleit-sprodbruchanteils">
-<h2><span class="section-number">8.1. </span>Bewertung des Gleit-/ Sprödbruchanteils<a class="headerlink" href="#bewertung-des-gleit-sprodbruchanteils" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.2. </span>Bewertung des Gleit-/ Sprödbruchanteils<a class="headerlink" href="#bewertung-des-gleit-sprodbruchanteils" title="Permalink to this heading">#</a></h2>
 <p>Der Gleitbruchanteil (= 1-Sprödbruchanteil) (Anteil der zähen oder duktilen Bruchstruktur auf der Bruchfläche) lässt isch über die DIN EN ISO 148-1 Anahng C bewerten. Hierfür sind die unterschiedlichen Bruchstrukturen auf der Bruchfläche zu identifizieren:</p>
 <ul class="simple">
 <li><p>die Gleitbruchbereiche sind tendentiell matt und zeigen Verformungen aus der Ebene heraus,</p></li>
@@ -405,7 +415,7 @@ document.write(`
 <p><img alt="Anteil" src="../_images/KBV_SprAnt.png" /></p>
 </section>
 <section id="darstellung-als-verbrauchte-schlagenergie-temperatur-kurve">
-<h2><span class="section-number">8.2. </span>Darstellung als “Verbrauchte Schlagenergie”-Temperatur-Kurve<a class="headerlink" href="#darstellung-als-verbrauchte-schlagenergie-temperatur-kurve" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3. </span>Darstellung als “Verbrauchte Schlagenergie”-Temperatur-Kurve<a class="headerlink" href="#darstellung-als-verbrauchte-schlagenergie-temperatur-kurve" title="Permalink to this heading">#</a></h2>
 <p>Wir die verbrauchte Schlagarbeit mit unterschiedlichen Proben bei verschiedenen Temperaturen ermittelt lassen sich die Ergebnisse als “Verbrauchte Schlagenergie”-Temperatur-Kurve darstellen.</p>
 <p><img alt="KBV-Diagramm" src="../_images/KBV_Diagramm.png" /></p>
 <p>Werkstoffabhängig lassen sich unterschiedliche Charakteristiken festellen:</p>
@@ -416,19 +426,19 @@ document.write(`
 </ul>
 </section>
 <section id="ermittlung-der-ubergangstemperatur">
-<h2><span class="section-number">8.3. </span>Ermittlung der Übergangstemperatur<a class="headerlink" href="#ermittlung-der-ubergangstemperatur" title="Permalink to this heading">#</a></h2>
-<p>Die Übergangstemperatur <span class="math notranslate nohighlight">\(T_t\)</span> ist die Temperatur, die den Temperaturbereich des Steilabfalls kennzeichnet. Sie kann auf unterschiedliche Arten ermittelt werden (vgl. DIN EN ISO 148-1 Anhang D.2). Im folgenden werden nur zwei arten genannt.</p>
+<h2><span class="section-number">8.4. </span>Ermittlung der Übergangstemperatur<a class="headerlink" href="#ermittlung-der-ubergangstemperatur" title="Permalink to this heading">#</a></h2>
+<p>Die Übergangstemperatur <span class="math notranslate nohighlight">\(T_t\)</span> ist die Temperatur, die den Temperaturbereich des Steilabfalls kennzeichnet. Sie kann auf unterschiedliche Arten ermittelt werden (vgl. DIN EN ISO 148-1 Anhang D.2). Im Folgenden werden nur zwei Arten genannt.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Die nach unterschiedlichen Verfahren ermittelten Übergangstemperaturen sind nicht direkt miteinander vergleichbar. Das Verfahren muss daher vorgegeben werden (z.B. in der jeweiligen Produktnorm)!</p>
 </div>
 <section id="ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie">
-<h3><span class="section-number">8.3.1. </span>Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t27J}\)</span> bei 27J verbrauchter Schlagenergie<a class="headerlink" href="#ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.4.1. </span>Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t27J}\)</span> bei 27J verbrauchter Schlagenergie<a class="headerlink" href="#ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie" title="Permalink to this heading">#</a></h3>
 <p>Als Übergangstemperatur wird die Temperatur defieirt, bei der die Proben eine verbrauchte Schalgarbeit von KV=27J aufweisen:</p>
 <p><img alt="KBV-27J" src="../_images/KBV_27J.png" /></p>
 </section>
 <section id="ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage">
-<h3><span class="section-number">8.3.2. </span>Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t50\%US}\)</span> bei 50% der verbrauchten Schlagenergie der Hochlage<a class="headerlink" href="#ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.4.2. </span>Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t50\%US}\)</span> bei 50% der verbrauchten Schlagenergie der Hochlage<a class="headerlink" href="#ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage" title="Permalink to this heading">#</a></h3>
 <p>Als Übergangstemperatur wird die Temperatur definiert, bei der die Proben eine verbrauchte Schalgarbeit von 50% der Schlagenergie der Hochlage aufweisen:</p>
 <p><img alt="KBV-50US" src="../_images/KBV_50US.png" /></p>
 </section>
@@ -502,11 +512,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bewertung-des-gleit-sprodbruchanteils">8.1. Bewertung des Gleit-/ Sprödbruchanteils</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#darstellung-als-verbrauchte-schlagenergie-temperatur-kurve">8.2. Darstellung als “Verbrauchte Schlagenergie”-Temperatur-Kurve</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ermittlung-der-ubergangstemperatur">8.3. Ermittlung der Übergangstemperatur</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie">8.3.1. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t27J}\)</span> bei 27J verbrauchter Schlagenergie</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage">8.3.2. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t50\%US}\)</span> bei 50% der verbrauchten Schlagenergie der Hochlage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorbemerkungen">8.1. Vorbemerkungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bewertung-des-gleit-sprodbruchanteils">8.2. Bewertung des Gleit-/ Sprödbruchanteils</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#darstellung-als-verbrauchte-schlagenergie-temperatur-kurve">8.3. Darstellung als “Verbrauchte Schlagenergie”-Temperatur-Kurve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ermittlung-der-ubergangstemperatur">8.4. Ermittlung der Übergangstemperatur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t27j-bei-27j-verbrauchter-schlagenergie">8.4.1. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t27J}\)</span> bei 27J verbrauchter Schlagenergie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubergangstemperatur-t-t50-us-bei-50-der-verbrauchten-schlagenergie-der-hochlage">8.4.2. Übergangstemperatur <span class="math notranslate nohighlight">\(T_{t50\%US}\)</span> bei 50% der verbrauchten Schlagenergie der Hochlage</a></li>
 </ul>
 </li>
 </ul>
@@ -532,7 +543,7 @@ By U. Wuttke
     
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 03/2026.
       <br/>
     
   </p>

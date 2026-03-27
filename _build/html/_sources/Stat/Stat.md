@@ -1,5 +1,9 @@
 # Auswerung
 
+## Vorbemerkung
+
+Wie die einzelnen Prüfergebnisse auszuwerten sind, ist nicht teil der jeweiligen Prüfnorm, sondern mit der Anwendung zu definieren.
+
 ## Definition statistischer Größen 
 
 |  |  |  |

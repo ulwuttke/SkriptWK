@@ -1,5 +1,10 @@
 # Grundlagen
 
+## Vorbemerkungen
+Das Versagensverhalten von Werkstoffen ist nicht alleine vom Werkstoff, sondern auch von der Beanspruchungsbedingungen abhänig. Bei metallischen Werkstoffe sind hier als wesentliche Einflussgrößen neben der Beanspruchungshöhe die *Beanspruchungsmehrachsigkeit*, die *Beanspruchungsgeschwindigkeit* und *Temperatur* zu nennen. Damit kann es passieren, dass ein eigentlich gutmütiger zäh-brechender Werkstoff unter extrembedingungen verformungsarm, also spröde versagt. Ein klassische Beispiel für ein solches Versagen sind die "Sprödbruche" der sog. [Liberty-Schiffe](https://metallurgyandmaterials.wordpress.com/2015/12/25/liberty-ship-failures/solche), [WiKi](https://en.wikipedia.org/wiki/Liberty_ship).
+
+Werkstoffe, mit einem ausgeprägten "spröd-duktil-Übergangsverhalten" sind beispielsweise Stähle mit ferritisch-perlitischem Gefüge (z.B. niedriglegierte Baustähle wie der S235 oder der S355). Werkstoffe die dies nicht zeigen sind z.B. Stähle mit austenitischem Gefüge wie z.B. der X5CrNi18-10 (1.4301, auch hisorisch V2A-*Versuchsschmelze 2 Austenit*-Stahl) bezeichnet. Begründet wird dieses unterschiedliche Verhalten über den jeweiligen Gittertyp des Gefüges und dessen unterschiede in der Kombination von Gleitsystemen und Packungsdichte.  
+
 ## Verformungsverhalten
 
 Die *reversibele Verformung* wird als *elastische Verformung* bezeichnet. Die *bleibende Verformung* als *plastische Verformung*. 
@@ -26,7 +31,7 @@ Gewöhnlich ist duktiles Werkstoffverhalten gewünscht, d.h. es gibt einen Warnb
 Die Begriffe *zäh* und *duktil* werden eigentlich synonym verwendet. Der Begriff *zäh* wird in der Regel in Kombination mit Werkstoffkennwerten verwendet (z.B. Bruchzähigkeit) und beschreibt eher den Widerstand gegen Bruch bzw. Rissausbreitung. Der Begriff *duktil* beschreibt umfasst dagegen das gesamte Verformungsverhalten. 
 ```
 
-Ob ein Werkstoff zäh oder spröd bricht, ist - neben dem Werkstoff an sich -  abhängig von den Beanspruchungsbedingungen 
+Wie eingangs beschrieben ist das Bruchverhalten - neben dem Werkstoff an sich -  abhängig von den Beanspruchungsbedingungen 
 
 - Temperatur
 - Belastungsgeschwindigkeit
@@ -37,7 +42,8 @@ Achtung: Es ist das zähe, bzw. spröde Werkstoff- von dem Bauteilverhalten zu u
 
 ## Kerbschlagbiegeversuch
 
-Als schnelles und einfaches Prüfverfahren, zur charakterisierung des Bruchverhaltens wird der [Kerbschalgbiegeverusch](https://de.wikipedia.org/wiki/Kerbschlagbiegeversuch) nach DIN EN ISO148-1 verwendet. In dem Verusch lassen sich durch tiefe Prüftemperaturen, die schlagartige Belastung und die Mehrachsigkeit durch die Kerbprobe werkstoffe unter sehr sprödbruchbegünstigenden Bedingungen Prüfen. Ergebnis der Einzelprüfung ist die Kerbschalgenergie (Kerbschalgarbeit) der Einzelprobe. Das Ergebnis eine Prüfreihe mit unterschiedlichen Temperaturen die Übergangstemperatur von sprädem zu zähem Bruchverhalten. 
+Als schnelles und einfaches Prüfverfahren, zur charakterisierung des Bruchverhaltens wird der [Kerbschalgbiegeverusch](https://de.wikipedia.org/wiki/Kerbschlagbiegeversuch) verwendet. Für Metalle ist das Verfahren in der DIN EN ISO 148-1:2017-05 *Metallische Werkstoffe — Kerbschlagbiegeversuch nach Charpy — Teil 1: Prüfverfahren* beschrieben. 
+ In dem Versuch lassen sich durch tiefe Prüftemperaturen, die schlagartige Belastung und die Mehrachsigkeit durch die Kerbprobe Werkstoffe unter sehr sprödbruchbegünstigenden Bedingungen Prüfen. Ergebnis der Einzelprüfung ist die Kerbschalgenergie (Kerbschalgarbeit) der Einzelprobe. Das Ergebnis eine Prüfreihe mit unterschiedlichen Temperaturen die Übergangstemperatur, die den Übergang von sprödem zu zähem Bruchverhalten charakterisiert.
 
 Der Kerbschlagbiegeversuch liefert KEINE Kennwerte für die Festigkeitsrechnung (zumindest nicht direkt).
 Er dient vor allem 
