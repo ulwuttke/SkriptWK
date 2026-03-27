@@ -1,47 +1,56 @@
-# Auswertung
+# Auswertung des Laborversuchs
 
-## Kennwerte, Übersicht
+## Spezielle Randbedingungen des Laborversuchs
 
-| Kennwert |  Definiton |
-| -------- | ------------------------- | 
-| Anfangsquerschnittsfläche | $S_0=\pi d_0^2/4$ (Kreisquerschnitt)
-| kleinster Querschnitt nach Bruch | $S_u=\pi d_u^2/4$ (Kreisquerschnitt)
-| obere Streckgrenze | $R_{eH}=F_{eH}/S_0$ |
-| 0,2%-Dehngrenze | $R_{p0,2}=F_{p0,2}/S_0$ |
-| Zugfestigkeit | $R_{m}=F_{m}/S_0$ |
-| Reissfestigkeit (nicht in der DIN EN ISO 6892-1 enthalten) | $R_u=F_u/S_u$ |
-| Bruchdehnung | $A=(L_u-L_0)/L_0$ |
-| Brucheinschnürung | $Z=(S_0-S_u)/S_0$ |
-| E-Modul | $E=(R_2-R_1)/(e_2-e_1)=\Delta R / \Delta e \text{   } (=\Delta \sigma / \Delta \epsilon )$ |
+Der Zugversuch im Labor hat die Besonderheit, dass die Probenverformung aufgrund des Messbereichs des zur Verfügungstehenden Extensometers nur bei geringen Verformungen (elastischer und beginnender plastischer Bereich) direkt gemessen werden kann. Damit stehen zwei Diagramme zur Verfügung: Kraft-Traversenweg und Kraft-Extensometerweg. Die jeweiligen Größen sind immer in dem dafür geeigneten Diagramm abzulesen! Das ist bei $R_{eH}$ bzw. $R_{p0,2}$ und dem E-Modul das Kraft-Extensometerweg-Diagramm, bei $R_m$ und $R_u$ das Kraft-Traversenweg-Diagramm. 
 
-## Erläuterungen
-Die Messgrößen vor und nach der durchgefürhten Prüfung sind in der folgenden darstellung zusammengefasst. Dabei ist zu beachten, dass sich die (Bezugs-)Längen $L_e$ (Extensometermesslänge), $L_0$ (Anfangsmesslänge) und $L_c$ (Prüflänge) i. A. unterscheiden. 
+Bei der Berechnung der Dehnung ist auf die richtige Bezugslänge zu achten, also immer die Länge, auf die sich die gemessene Verlängerung bezieht. Das ist bei der Bruchdehnung und der Brucheinschnürung die Anfangsmesslänge $L_0$. Bei $L_{p0,2}$ und der Dehnung zur Berechnung des E-Moduls die Extensometermesslänge $L_e$. 
+
+```{note}
+$L_0$ und $L_e$ sind beides Längen, die im Grunde nicht direkt an der Probe zu messen sind:
+
+Anfangsmesslänge $L_0$ wird auf der Probe (frei) markiert, die Extensometermesslänge $L_e$ ergibt sich aus dem Abstand der Messschneiden/Bezugsebenen des Extensometers
+
+```
+
+## Verformbarkeitskennwerte
+Die Messgrößen zur Berechnung der **Bruchdehnung** $A$ und der **Brucheinschürung** $Z$ efolgen direkt an der Probe vor und nach der Prüfung. Wie in der nachfolgenden Darstellung skizziert ist auf den richtigen Bezug bei der Messung zu achten: 
+
+- die Bruchdehnung $A$ ergibt sich aus der Änderung der Anfangsmesslänge $L_u-L_0$ bezogen auf die Anfangsmesslänge $L_0$. Es ist darauf zu achten, dass $L_0$ und $L_u$ über die gleichen Messmarken gemessen werden. 
+
+- die Brucheinschnürung $Z$ ergibt sich aus der Änderung der Querschnittsfläche aus $d_0$ und $d_u$.
 
 ![MessZP](MessZP.png)
 
-Es ist darauf zu achten, bei der Berechnung der Dehnungen immer die richige Bezugslänge zu wählen:
 
-- die Bruchdahnung $A$ ergibt sich aus der Änderung der Anfangsmesslänge $L_u-L_0$ bezogen auf die Anfangsmesslänge $L_0$
-- der Extensometerweg für eine Dehung von $0,2%$ ergibt sich aus dieser Dehnung und der Messlänge des Extensometers $L_e$
+## Festigkeitskennwerte
 
-Die Kraft und Verformungsgrößen ergeben für die Berechnung der Kennwerte ergeben sich aus der folgenden Darstellung: 
+Allgemein ergeben sich die Festigkeitskennwerte aus den Gemessenen Kraft-Verformungs-DIagrammen. Bei Werkstoffen mit ausgeprägter **Streckgrenze** ist der Bereich der elastischen und der elastisch-plastischen Verfomung deutich unterscheidbar. Damit lassen sich die entsprechenden Kräfte direkt ablesen. 
+
+Ohne ausgeprägte Streckgrenze existiert ein allmählicher Übergang von der (linear) elastischen Verformung zur elastisch-plastischen und damit kein gut und einheitlich zu definierender "Ablesepunkt". Um hier einen der Streckgrenze vergleichbaren Kennwert zu besitzen, wird eine **Dehngrenze** definiert, also die Spannung, bei der eine bestimmte plasistische Dehnung erreicht wird. Die Dehung wird typischerweise auf $0,2\%$ plasitsche Dehnung festgelegt. Abzulesen ist der Wert durch die um die um den Dehnungswert von $0,2\%$ verschobenen elastischen Geraden. Im Kraft-Verfomungsdiagramm also der Länge $L_{p0,2}=0,2\%\;L_e$
+
+Die **Reissfestigkeit** ist eine nicht in der DIN EN ISO 6892-1 definierte Größe. Sie ist im Rahmen des Laborversuchs definierte als die Spannung, die kurz vor dem Bruch im kleinsten Querschnitt in der Einschnürung wirkt. Die so defineirte Festigkeitsgröße bezieht sich also auf den aktuellen Querscnitt bei Bruch $A_u$ und nicht wie bei den zuvor genannten Kenngrößen auf den Ausgangsquerschnitt. 
 
 ![KurveZV](KurveZV.png)
 
-In dem Bild sind die beiden für metallische Werkstoffe typischen Ausprägungen des Kraft-verlängerungs-Verlaufs dargestellt: mit und ohne ausgeprägte Streckgrenze.  
-Bei Werkstoffen mit ausgeprägter Streckgrenze ist der Bereich der elastischen und der elastisch-plastischen Verfomung deutich unterscheidbar. Ohne ausgeprägte Streckgrenze existiert ein allmählihcer übergang von der (linear) elastischen Verformung zur elastisch-plastischen. Um hier einen der Streckgrenze vergleichbaren Kennwert zu besitzen ist die Dehngrenze definiert, die typischer weise die den Spannungswert bei $0,2%$ beschreibt. Abzulesen ist der Wert durch die um die um den Dehnungswert von $0,2%$ verschobenen elastischen Geraden.
+## Elastizitätsmodul
 
-Der Elastizitätsmodul ist die Steigung der elastischen Geraden im Spannungs-Dehnungs-Diagramm (nicht im Kraft-Verformungs-Diagramm, daher sind hier wie in den folgenden Bild gezeigt zunächst die Spannungen und Dehnungen zu berechnen). Ermittelbar ist er über zwei beliebige Punkte auf der elstischen Geraden.
+Der **Elastizitätsmodul** ist die Steigung der elastischen Geraden im Spannungs-Dehnungs-Diagramm. Ermittelbar ist er über zwei beliebige Punkte auf der elstischen Geraden. 
+In aus dem Versuch ergibt sich aber zunächst ein Kraft-Verlängerungsdiagramm. Die Steigung hier ist nicht der E-Modul. Daher muss bei der Berechnung auf Basis des Kraft-Verlängerungs-Diagramms noch Umrechnung der Größen auf Spannungen und Dehnungen mit erfolgen:
 
 ![Bestimmung E-Modul](ZVBestE.png)
 
-Die Reissfestigkeit ist eine nicht in der DIN EN ISO 6892-1 definierte Größe. Sie ist definiert als die Spannung, die kurz vor dem Bruch im kleinsten Querschnitt in der Einschnürung wirkt. Die so defineirte Festigkeitsgröße bezieht sich also auf den aktuellen Querscnitt und nicht wie die in der DIN EX ISO 6892-1 definierten Festikteitskennwerte auf den Ausgangsquerschnitt. 
-
-## Beispiel
-
-In der folgenden .pdf-Datei sind einige Beispiel der Auswertung des Zugversuchs enthalten. Es sit zu beachten, dass immer zwei Diagramme enthalten sind: Kraft-Traversenweg-Diagramm und Kraft-Extensometerweg-Diagramm. Wichtig ist, dass die Auswertugnen, in die die Dehnung eingehen (E-Modul, 0,2% Dehngrenze) immer in dem Extensometerweg-Diagramm durchgeführt werden.
-
-[ZVBeispiel](220623_ZVVergleichswerte_mitProt-b.pdf)
 
 
-## Dokumentation
+## Beispiel und Vergleichswerte
+
+In der folgenden .pdf-Datei sind einige Beispiel der Auswertung des Zugversuchs wie er im Labor erfolgt enthalten:
+
+[ZVBspAus](220623-ZV-Beispielauswertung.pdf)
+
+
+Die folgende .pdf-Datei enthält Vergleichswerte für die Einordnnug des Werkstoffs:
+
+[ZVVergl](220623_ZV-Vergleichswerte.pdf)
+
+

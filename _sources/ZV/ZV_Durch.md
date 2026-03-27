@@ -1,4 +1,4 @@
-# Durchfürhung
+# Durchführung der Prüfung
 
 ## Probenform
 
@@ -14,12 +14,13 @@ Für die einfachere Festlegung der Probenform sind verschiedene Proben in der *D
  
 ## Prüfablauf
 
-Die Probe wird an ihren Enden in die Prüfmaschine eingespannt und belastst (weggeregelt). Wichtig ist, dass insbesondere zu Beginn der Pürgfund (also im elastischen Bereich und im Übergang zum elastisch-plastischen Bereich) die Verformung an der Probe gemessen wird.  
+Die Probe wird an ihren Enden in die Prüfmaschine eingespannt und belastst (weggeregelt). Wichtig ist, dass insbesondere zu Beginn der Prüfung (also im elastischen Bereich und im Übergang zum elastisch-plastischen Bereich) die Verformung an der Probe gemessen wird.  
 
-Vor Beginn der Pürfung ist die Probenabmessung (z.B. der Anfangsdurchmesser der Probe $d_0$) zu dokumentieren und die Anfangsmesslänge $L_0$ auf der Probe zu mrkieren (für die spätere auswertung der Bruchdehnung). Die Anfangsmesslänge $L_c$ unterscheidet sich von der Versuchslänge $L_c$, der Prüflänge der Probe mit konstamtem Querschnitt. 
+Vor Beginn der Pürfung ist die Probenabmessung (z.B. der Anfangsdurchmesser der Probe $d_0$) zu dokumentieren und die Anfangsmesslänge $L_0$ auf der Probe zu mrkieren (für die spätere Auswertung der Bruchdehnung). Die Anfangsmesslänge $L_c$ unterscheidet sich von der Versuchslänge $L_c$, der Prüflänge der Probe mit konstamtem Querschnitt. 
 
 Die Geschwindigkeit des aufzubinrgenden Weges ist mit Hilfe der DIN EN ISO 6892-1 Bild 9 festzulegen. Dabei ist zu beachten, dass hier die Dehngeschwindigkeiten der Probe definiert werden. Diese sind über die jeweilige Messlänge in die Verformungsgeschwindigkeit umzurechnen. Bei der Vorgabe über den Traversenweg, ist die Maschinensteifigkeit zu berücksichtigen.  
-Für die Prüfung wird das Verfahren *A* in den Bereichen *224* empfohlen. Kann die  Geschwindigkeiten
+Für die Prüfung wird das Verfahren *A* in den Bereichen *224* empfohlen: 
+
 | Bereich |  Kennwerte  |  Geschwindigkeit $\dot{e}$ in $\text{s}^{-1}$ |
 | --- | ------------------------- | ----------- |
 | 2 | obere Streckgrenze $R_{eH}$; Dehngrenze $R_p$ | $0,0007$

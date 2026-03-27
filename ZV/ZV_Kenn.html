@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>11. Auswertung &#8212; Laborskript WK Lab 1</title>
+    <title>11. Auswertung des Laborversuchs &#8212; Laborskript WK Lab</title>
   
   
   
@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="12. Grundlagen" href="../Met_Einl.html" />
-    <link rel="prev" title="10. Durchfürhung" href="ZV_Durch.html" />
+    <link rel="prev" title="10. Durchführung der Prüfung" href="ZV_Durch.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,13 +175,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zugversuch</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ZV_Einl.html">9. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ZV_Durch.html">10. Durchfürhung</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Auswertung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZV_Durch.html">10. Durchführung der Prüfung</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Auswertung des Laborversuchs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Metallografie</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Met_Einl.html">12. Grundlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Met/Met_Bsp.html">13. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Met/Met_Besch.html">13. Beschreibung der Arbeitsschritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Met/Met_Bsp.html">14. Beispiele von Schliffbildern an Eisenbasiswerkstoffen</a></li>
 </ul>
 
     </div>
@@ -365,7 +366,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Auswertung</h1>
+    <h1>Auswertung des Laborversuchs</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -375,10 +376,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kennwerte-ubersicht">11.1. Kennwerte, Übersicht</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#erlauterungen">11.2. Erläuterungen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel">11.3. Beispiel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dokumentation">11.4. Dokumentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spezielle-randbedingungen-des-laborversuchs">11.1. Spezielle Randbedingungen des Laborversuchs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformbarkeitskennwerte">11.2. Verformbarkeitskennwerte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#festigkeitskennwerte">11.3. Festigkeitskennwerte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastizitatsmodul">11.4. Elastizitätsmodul</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-und-vergleichswerte">11.5. Beispiel und Vergleichswerte</a></li>
 </ul>
             </nav>
         </div>
@@ -390,71 +392,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="auswertung">
-<h1><span class="section-number">11. </span>Auswertung<a class="headerlink" href="#auswertung" title="Permalink to this heading">#</a></h1>
-<section id="kennwerte-ubersicht">
-<h2><span class="section-number">11.1. </span>Kennwerte, Übersicht<a class="headerlink" href="#kennwerte-ubersicht" title="Permalink to this heading">#</a></h2>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Kennwert</p></th>
-<th class="head"><p>Definiton</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Anfangsquerschnittsfläche</p></td>
-<td><p><span class="math notranslate nohighlight">\(S_0=\pi d_0^2/4\)</span> (Kreisquerschnitt)</p></td>
-</tr>
-<tr class="row-odd"><td><p>kleinster Querschnitt nach Bruch</p></td>
-<td><p><span class="math notranslate nohighlight">\(S_u=\pi d_u^2/4\)</span> (Kreisquerschnitt)</p></td>
-</tr>
-<tr class="row-even"><td><p>obere Streckgrenze</p></td>
-<td><p><span class="math notranslate nohighlight">\(R_{eH}=F_{eH}/S_0\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>0,2%-Dehngrenze</p></td>
-<td><p><span class="math notranslate nohighlight">\(R_{p0,2}=F_{p0,2}/S_0\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>Zugfestigkeit</p></td>
-<td><p><span class="math notranslate nohighlight">\(R_{m}=F_{m}/S_0\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>Reissfestigkeit (nicht in der DIN EN ISO 6892-1 enthalten)</p></td>
-<td><p><span class="math notranslate nohighlight">\(R_u=F_u/S_u\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>Bruchdehnung</p></td>
-<td><p><span class="math notranslate nohighlight">\(A=(L_u-L_0)/L_0\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>Brucheinschnürung</p></td>
-<td><p><span class="math notranslate nohighlight">\(Z=(S_0-S_u)/S_0\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>E-Modul</p></td>
-<td><p><span class="math notranslate nohighlight">\(E=(R_2-R_1)/(e_2-e_1)=\Delta R / \Delta e \text{   } (=\Delta \sigma / \Delta \epsilon )\)</span></p></td>
-</tr>
-</tbody>
-</table>
+  <section class="tex2jax_ignore mathjax_ignore" id="auswertung-des-laborversuchs">
+<h1><span class="section-number">11. </span>Auswertung des Laborversuchs<a class="headerlink" href="#auswertung-des-laborversuchs" title="Permalink to this heading">#</a></h1>
+<section id="spezielle-randbedingungen-des-laborversuchs">
+<h2><span class="section-number">11.1. </span>Spezielle Randbedingungen des Laborversuchs<a class="headerlink" href="#spezielle-randbedingungen-des-laborversuchs" title="Permalink to this heading">#</a></h2>
+<p>Der Zugversuch im Labor hat die Besonderheit, dass die Probenverformung aufgrund des Messbereichs des zur Verfügungstehenden Extensometers nur bei geringen Verformungen (elastischer und beginnender plastischer Bereich) direkt gemessen werden kann. Damit stehen zwei Diagramme zur Verfügung: Kraft-Traversenweg und Kraft-Extensometerweg. Die jeweiligen Größen sind immer in dem dafür geeigneten Diagramm abzulesen! Das ist bei <span class="math notranslate nohighlight">\(R_{eH}\)</span> bzw. <span class="math notranslate nohighlight">\(R_{p0,2}\)</span> und dem E-Modul das Kraft-Extensometerweg-Diagramm, bei <span class="math notranslate nohighlight">\(R_m\)</span> und <span class="math notranslate nohighlight">\(R_u\)</span> das Kraft-Traversenweg-Diagramm.</p>
+<p>Bei der Berechnung der Dehnung ist auf die richtige Bezugslänge zu achten, also immer die Länge, auf die sich die gemessene Verlängerung bezieht. Das ist bei der Bruchdehnung und der Brucheinschnürung die Anfangsmesslänge <span class="math notranslate nohighlight">\(L_0\)</span>. Bei <span class="math notranslate nohighlight">\(L_{p0,2}\)</span> und der Dehnung zur Berechnung des E-Moduls die Extensometermesslänge <span class="math notranslate nohighlight">\(L_e\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="math notranslate nohighlight">\(L_0\)</span> und <span class="math notranslate nohighlight">\(L_e\)</span> sind beides Längen, die im Grunde nicht direkt an der Probe zu messen sind:</p>
+<p>Anfangsmesslänge <span class="math notranslate nohighlight">\(L_0\)</span> wird auf der Probe (frei) markiert, die Extensometermesslänge <span class="math notranslate nohighlight">\(L_e\)</span> ergibt sich aus dem Abstand der Messschneiden/Bezugsebenen des Extensometers</p>
+</div>
 </section>
-<section id="erlauterungen">
-<h2><span class="section-number">11.2. </span>Erläuterungen<a class="headerlink" href="#erlauterungen" title="Permalink to this heading">#</a></h2>
-<p>Die Messgrößen vor und nach der durchgefürhten Prüfung sind in der folgenden darstellung zusammengefasst. Dabei ist zu beachten, dass sich die (Bezugs-)Längen <span class="math notranslate nohighlight">\(L_e\)</span> (Extensometermesslänge), <span class="math notranslate nohighlight">\(L_0\)</span> (Anfangsmesslänge) und <span class="math notranslate nohighlight">\(L_c\)</span> (Prüflänge) i. A. unterscheiden.</p>
-<p><img alt="MessZP" src="../_images/MessZP.png" /></p>
-<p>Es ist darauf zu achten, bei der Berechnung der Dehnungen immer die richige Bezugslänge zu wählen:</p>
+<section id="verformbarkeitskennwerte">
+<h2><span class="section-number">11.2. </span>Verformbarkeitskennwerte<a class="headerlink" href="#verformbarkeitskennwerte" title="Permalink to this heading">#</a></h2>
+<p>Die Messgrößen zur Berechnung der <strong>Bruchdehnung</strong> <span class="math notranslate nohighlight">\(A\)</span> und der <strong>Brucheinschürung</strong> <span class="math notranslate nohighlight">\(Z\)</span> efolgen direkt an der Probe vor und nach der Prüfung. Wie in der nachfolgenden Darstellung skizziert ist auf den richtigen Bezug bei der Messung zu achten:</p>
 <ul class="simple">
-<li><p>die Bruchdahnung <span class="math notranslate nohighlight">\(A\)</span> ergibt sich aus der Änderung der Anfangsmesslänge <span class="math notranslate nohighlight">\(L_u-L_0\)</span> bezogen auf die Anfangsmesslänge <span class="math notranslate nohighlight">\(L_0\)</span></p></li>
-<li><p>der Extensometerweg für eine Dehung von <span class="math notranslate nohighlight">\(0,2%\)</span> ergibt sich aus dieser Dehnung und der Messlänge des Extensometers <span class="math notranslate nohighlight">\(L_e\)</span></p></li>
+<li><p>die Bruchdehnung <span class="math notranslate nohighlight">\(A\)</span> ergibt sich aus der Änderung der Anfangsmesslänge <span class="math notranslate nohighlight">\(L_u-L_0\)</span> bezogen auf die Anfangsmesslänge <span class="math notranslate nohighlight">\(L_0\)</span>. Es ist darauf zu achten, dass <span class="math notranslate nohighlight">\(L_0\)</span> und <span class="math notranslate nohighlight">\(L_u\)</span> über die gleichen Messmarken gemessen werden.</p></li>
+<li><p>die Brucheinschnürung <span class="math notranslate nohighlight">\(Z\)</span> ergibt sich aus der Änderung der Querschnittsfläche aus <span class="math notranslate nohighlight">\(d_0\)</span> und <span class="math notranslate nohighlight">\(d_u\)</span>.</p></li>
 </ul>
-<p>Die Kraft und Verformungsgrößen ergeben für die Berechnung der Kennwerte ergeben sich aus der folgenden Darstellung:</p>
+<p><img alt="MessZP" src="../_images/MessZP.png" /></p>
+</section>
+<section id="festigkeitskennwerte">
+<h2><span class="section-number">11.3. </span>Festigkeitskennwerte<a class="headerlink" href="#festigkeitskennwerte" title="Permalink to this heading">#</a></h2>
+<p>Allgemein ergeben sich die Festigkeitskennwerte aus den Gemessenen Kraft-Verformungs-DIagrammen. Bei Werkstoffen mit ausgeprägter <strong>Streckgrenze</strong> ist der Bereich der elastischen und der elastisch-plastischen Verfomung deutich unterscheidbar. Damit lassen sich die entsprechenden Kräfte direkt ablesen.</p>
+<p>Ohne ausgeprägte Streckgrenze existiert ein allmählicher Übergang von der (linear) elastischen Verformung zur elastisch-plastischen und damit kein gut und einheitlich zu definierender “Ablesepunkt”. Um hier einen der Streckgrenze vergleichbaren Kennwert zu besitzen, wird eine <strong>Dehngrenze</strong> definiert, also die Spannung, bei der eine bestimmte plasistische Dehnung erreicht wird. Die Dehung wird typischerweise auf <span class="math notranslate nohighlight">\(0,2\%\)</span> plasitsche Dehnung festgelegt. Abzulesen ist der Wert durch die um die um den Dehnungswert von <span class="math notranslate nohighlight">\(0,2\%\)</span> verschobenen elastischen Geraden. Im Kraft-Verfomungsdiagramm also der Länge <span class="math notranslate nohighlight">\(L_{p0,2}=0,2\%\;L_e\)</span></p>
+<p>Die <strong>Reissfestigkeit</strong> ist eine nicht in der DIN EN ISO 6892-1 definierte Größe. Sie ist im Rahmen des Laborversuchs definierte als die Spannung, die kurz vor dem Bruch im kleinsten Querschnitt in der Einschnürung wirkt. Die so defineirte Festigkeitsgröße bezieht sich also auf den aktuellen Querscnitt bei Bruch <span class="math notranslate nohighlight">\(A_u\)</span> und nicht wie bei den zuvor genannten Kenngrößen auf den Ausgangsquerschnitt.</p>
 <p><img alt="KurveZV" src="../_images/KurveZV.png" /></p>
-<p>In dem Bild sind die beiden für metallische Werkstoffe typischen Ausprägungen des Kraft-verlängerungs-Verlaufs dargestellt: mit und ohne ausgeprägte Streckgrenze.<br />
-Bei Werkstoffen mit ausgeprägter Streckgrenze ist der Bereich der elastischen und der elastisch-plastischen Verfomung deutich unterscheidbar. Ohne ausgeprägte Streckgrenze existiert ein allmählihcer übergang von der (linear) elastischen Verformung zur elastisch-plastischen. Um hier einen der Streckgrenze vergleichbaren Kennwert zu besitzen ist die Dehngrenze definiert, die typischer weise die den Spannungswert bei <span class="math notranslate nohighlight">\(0,2%\)</span> beschreibt. Abzulesen ist der Wert durch die um die um den Dehnungswert von <span class="math notranslate nohighlight">\(0,2%\)</span> verschobenen elastischen Geraden.</p>
-<p>Der Elastizitätsmodul ist die Steigung der elastischen Geraden im Spannungs-Dehnungs-Diagramm (nicht im Kraft-Verformungs-Diagramm, daher sind hier wie in den folgenden Bild gezeigt zunächst die Spannungen und Dehnungen zu berechnen). Ermittelbar ist er über zwei beliebige Punkte auf der elstischen Geraden.</p>
+</section>
+<section id="elastizitatsmodul">
+<h2><span class="section-number">11.4. </span>Elastizitätsmodul<a class="headerlink" href="#elastizitatsmodul" title="Permalink to this heading">#</a></h2>
+<p>Der <strong>Elastizitätsmodul</strong> ist die Steigung der elastischen Geraden im Spannungs-Dehnungs-Diagramm. Ermittelbar ist er über zwei beliebige Punkte auf der elstischen Geraden.
+In aus dem Versuch ergibt sich aber zunächst ein Kraft-Verlängerungsdiagramm. Die Steigung hier ist nicht der E-Modul. Daher muss bei der Berechnung auf Basis des Kraft-Verlängerungs-Diagramms noch Umrechnung der Größen auf Spannungen und Dehnungen mit erfolgen:</p>
 <p><img alt="Bestimmung E-Modul" src="../_images/ZVBestE.png" /></p>
-<p>Die Reissfestigkeit ist eine nicht in der DIN EN ISO 6892-1 definierte Größe. Sie ist definiert als die Spannung, die kurz vor dem Bruch im kleinsten Querschnitt in der Einschnürung wirkt. Die so defineirte Festigkeitsgröße bezieht sich also auf den aktuellen Querscnitt und nicht wie die in der DIN EX ISO 6892-1 definierten Festikteitskennwerte auf den Ausgangsquerschnitt.</p>
 </section>
-<section id="beispiel">
-<h2><span class="section-number">11.3. </span>Beispiel<a class="headerlink" href="#beispiel" title="Permalink to this heading">#</a></h2>
-<p>In der folgenden .pdf-Datei sind einige Beispiel der Auswertung des Zugversuchs enthalten. Es sit zu beachten, dass immer zwei Diagramme enthalten sind: Kraft-Traversenweg-Diagramm und Kraft-Extensometerweg-Diagramm. Wichtig ist, dass die Auswertugnen, in die die Dehnung eingehen (E-Modul, 0,2% Dehngrenze) immer in dem Extensometerweg-Diagramm durchgeführt werden.</p>
-<p><a class="reference download internal" download="" href="../_downloads/d8d86fe19a89e4b6abcfd205cea7d3c6/220623_ZVVergleichswerte_mitProt-b.pdf"><span class="xref download myst">ZVBeispiel</span></a></p>
-</section>
-<section id="dokumentation">
-<h2><span class="section-number">11.4. </span>Dokumentation<a class="headerlink" href="#dokumentation" title="Permalink to this heading">#</a></h2>
+<section id="beispiel-und-vergleichswerte">
+<h2><span class="section-number">11.5. </span>Beispiel und Vergleichswerte<a class="headerlink" href="#beispiel-und-vergleichswerte" title="Permalink to this heading">#</a></h2>
+<p>In der folgenden .pdf-Datei sind einige Beispiel der Auswertung des Zugversuchs wie er im Labor erfolgt enthalten:</p>
+<p><a class="reference download internal" download="" href="../_downloads/45658d29ed579bf37b1ad4d8e5e87744/220623-ZV-Beispielauswertung.pdf"><span class="xref download myst">ZVBspAus</span></a></p>
+<p>Die folgende .pdf-Datei enthält Vergleichswerte für die Einordnnug des Werkstoffs:</p>
+<p><a class="reference download internal" download="" href="../_downloads/48959422d1fcf01ad2c279fa546f0886/220623_ZV-Vergleichswerte.pdf"><span class="xref download myst">ZVVergl</span></a></p>
 </section>
 </section>
 
@@ -495,7 +472,7 @@ Bei Werkstoffen mit ausgeprägter Streckgrenze ist der Bereich der elastischen u
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>Durchfürhung</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Durchführung der Prüfung</p>
       </div>
     </a>
     <a class="right-next"
@@ -525,10 +502,11 @@ Bei Werkstoffen mit ausgeprägter Streckgrenze ist der Bereich der elastischen u
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kennwerte-ubersicht">11.1. Kennwerte, Übersicht</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#erlauterungen">11.2. Erläuterungen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel">11.3. Beispiel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dokumentation">11.4. Dokumentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spezielle-randbedingungen-des-laborversuchs">11.1. Spezielle Randbedingungen des Laborversuchs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verformbarkeitskennwerte">11.2. Verformbarkeitskennwerte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#festigkeitskennwerte">11.3. Festigkeitskennwerte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastizitatsmodul">11.4. Elastizitätsmodul</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-und-vergleichswerte">11.5. Beispiel und Vergleichswerte</a></li>
 </ul>
   </nav></div>
 
@@ -552,7 +530,7 @@ By U. Wuttke
     
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 03/2026.
       <br/>
     
   </p>

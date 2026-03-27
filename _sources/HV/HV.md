@@ -5,11 +5,11 @@
 (ueber)=
 ## Übersicht Prüfung
 
-| [Härteprüfung nach Vickers](https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)) | DIN EN ISO 6507-1:2018-07 |
+| [Härteprüfung nach Vickers](https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)) | DIN EN ISO 6507-1:2024-01 |
 | ----------- | ----------- |
 | [Prüfkörper](probehv) | Glatte ebene Prüffläche, Mindestdicke $1,5\cdot\textit{Diagonalenlänge}$
 | Eindringkörper (fix) | vierseitige Pyramide (quadratische Grundfläche, Spitzenwinkel zwischen den Flanken 136°, Spitze nicht abgerundet) aus Diamant |
-| [Prüfkraft](pkhv) | Je nach Anwendung zwischen 0,09807 N bis 980,7N, (fast) frei wählbar |
+| [Prüfkraft](pkhv) | Je nach Anwendung zwischen 0,09807 N (HV 0,001)bis 980,7N (HV 100), (fast) frei wählbar |
 | Position Eindruck | (fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6507-1 Abschn. 8.8) |
 | Ablauf | 1. belasten in $7^{+1}_{-5}$ s, 2. halten (Einwirkdauer) $14^{+1}_{-4}$ s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten |
 | [Ausmessen des Eindrucks](eindrhv)  | Eindruckdiagonalen $d_1$ und $d_2$| 
@@ -98,13 +98,15 @@ c) Prüfdatum
 
 d) Prüfergebnis
 
-e) alle wesentlichen Randbedingunen der Prüfung, die nicht in der Norm festgelegt sind
+e) soweit vorhanden die Krümmung der Oberfläche bei Anwendung der Krümmungskorrektur
 
-f) Ereignisse oder Bedinugnen die ggf. das Prüfergebnis beeinträchtigen können
+f) alle wesentlichen Randbedingunen der Prüfung, die nicht in der Norm festgelegt sind
 
-g) die Prüftemperatur
+g) Ereignisse oder Bedingungen die ggf. das Prüfergebnis beeinträchtigen können
 
-h) ggf. Grundlage und Verfahren der Umwertung
+h) die Prüftemperatur
+
+i) ggf. Grundlagen für die Umwertung und das Umwerteverfahren
 
 [Übersicht](ueber) 
 

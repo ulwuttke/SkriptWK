@@ -3,12 +3,12 @@
 (ueber)=
 ## Übersicht Prüfung
 
-| [Härteprüfung nach Brinell](https://de.wikipedia.org/wiki/H%C3%A4rte#Brinell) | DIN EN ISO 6507-1:2015-02 |
+| [Härteprüfung nach Brinell](https://de.wikipedia.org/wiki/H%C3%A4rte#Brinell) | DIN EN ISO 6506-1:2015-01 |
 | ----------- | ----------- |
 | [Prüfkörper](probehb) | Glatte ebene Prüffläche, Mindestdicke $8\cdot\textit{Eindringtiefe}$
 | Eindringkörper | Kugel mit $D=1; 2,5; 5; 10 \text{ mm}$ aus Hartmetall (früher auch gehärteter Stahl)|
 | [Prüfkraft](pkhb) | Je nach Werkstoff und Kugeldurchmesser zwischen 9,807 N und 29,420 kN, definiert über den Beanspruchungsgrad |
-| Position Eindruck | (fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6507-1 Abschn. 8.8) |
+| Position Eindruck | (fast) frei wählbar; Rand und Lochabstände beachten (vgl. DIN EN ISO 6506-1 Abschn. 8.8) |
 | Ablauf | 1. belasten in $7^{+1}_{-5}$ s, 2. halten (Einwirkdauer) $14^{+1}_{-4}$ s (bei abweichender Zeit mit anzugeben), 3. komplett entlasten |
 | [Ausmessen des Eindrucks](eindrhb)  | Eindruckdiagonalen $d_1$ und $d_2$| 
 | [Berechnung des Härtewertes](berhb) | Brinell-Härte $= 0,102\cdot\frac{2F}{\pi{} D^2(1-\sqrt{1-d^2/D^2})}$, $F$ in N, $d=\frac{d_1+d_2}{2}$ in mm |
@@ -17,7 +17,7 @@
 (probehb)=
 ## Prüfkörper
 
-Die Prüfung muss an einer glatten une ebenen Oberflächer vorgenommen werden. 
+Die Prüfung muss an einer glatten und ebenen Oberflächer vorgenommen werden. 
 Die Dicke der Probe muss mindestens das 8-Fache der Eindringtiefe $h$ betragen. 
 
 $\textit{Mindestdicke}=8\cdot h=8\cdot\frac{D}{2}(1-\sqrt{1-d^2/D^2})$
@@ -31,7 +31,7 @@ Kann der Härtewert geshätzt werden, kann die Eindruckdiagonale $d$ aus der Gel
 (pkhb)=
 ## Prüfkräfte
 
-Die Prüfkräfte sind so zu wählen, dass der Eindruckdurchmesser zwischen den Werten 0,24 D 0,6 D liegt. Dies wird i.A. durch die Wahl der Prüfkraft anhand des Beanspruchungsgrades $(=0,102\cdot F/D^2)$ erreicht, der für bestimmte Härteniveaus bzw. typische Werkstoffe in der DIN EN ISO 6506-1 definiert ist:
+Die Prüfkräfte sind so zu wählen, dass der Eindruckdurchmesser $d$ zwischen den Werten $0,24\cdot D$ und $0,6\cdot D$ liegt. Dies wird i.A. durch die Wahl der Prüfkraft anhand des Beanspruchungsgrades $(=0,102\cdot F/D^2)$ erreicht, der für bestimmte Härteniveaus bzw. typische Werkstoffe in der DIN EN ISO 6506-1 definiert ist:
 
 |Werkstoff| Brinellhärte|Beanspruchungsgrad|
 | ----------- | ----------- |----------- |
@@ -83,7 +83,7 @@ $d=\frac{d_1+d_2}{2}$
 
 Mit der Oberfläche des Kugelsegments
 
-$A_D=\frac{\pi D}{2}(D-\sqrt(D^2-d^2)$
+$A_D=\frac{\pi\. D}{2}(D-\sqrt(D^2-d^2)$
 
 ergibt sich der Härtewert
 
@@ -119,7 +119,7 @@ c) Prüfdatum
 
 d) Prüftemperatur
 
-e) ggf. das Verhältnis von Eindruckdruchmesser und Eindringkörperdurchmesser
+e) ggf. das Verhältnis von Eindruckdruchmesser und Eindringkörperdurchmesser wenn außerhalb des Bereichs zwischen $0,24\cdot D$ und $0,6\cdot D$ 
 
 f) Prüfergebnis
 
@@ -127,7 +127,7 @@ g) ggf. Grundlage und Verfahren der Umwertung
 
 h) alle wesentlichen Randbedingunen der Prüfung, die nicht in der Norm festgelegt sind
 
-i) Ereignisse oder Bedinugnen die ggf. das Prüfergebnis beeinträchtigen können
+i) Ereignisse oder Bedinugnen die ggf. das Prüfergebnis beeinflussen können
 
 
 [Übersicht](ueber) 

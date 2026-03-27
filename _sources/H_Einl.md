@@ -33,5 +33,3 @@ Der Ablauf bei den Standardhärteprüfverfahren (Brinell, Vickers, Rockwell; ent
 
 
 Bei den Standardhärteprüfverfahren wird der plastische Eindruck (plastischen Verformungseigenschaften,  plastische Eindringwiderstand) bewertet. Werkstoffe die sich nicht plastisch Verformen (z.B. gummielastische Werkstoffe) können mit den Verfahren nicht bewertet werden.
-
-H_AblAllg.png
