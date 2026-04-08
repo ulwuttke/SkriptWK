@@ -10,8 +10,8 @@ Wie die einzelnen Prüfergebnisse auszuwerten sind, ist nicht teil der jeweilige
 | :-- | :-- | :-- |
 | Mittelwert | arithmetisches Mittel | $\bar{x}=\frac{1}{n}\sum\nolimits_{i=1}^{n} x_i$ |
 | Median | "der Wert in der Mitte" von nach der Größe geordneten Messerten | $\tilde{x}=\left \{\begin{array}{cl} x_{(n+1)/2},& \text{ n ungerade}\\ 1/2(x_{n/2}+x_{(n/2+1)}),& \text{ n gerade} \end{array}\right.$ |
-| Spannweite |  | $r=x_{max}-x_{min}$ |
-| relative Spannweite |  | $r_{rel}=r/\bar{x}$ |
+| Spannweite  | (Wiederholpr.) | $r=x_{max}-x_{min}$ |
+| relative Spannweite  | (rel. Wiederholpr.) | $r_{rel}=r/\bar{x}$ |
 
 
 ## Beispiele
